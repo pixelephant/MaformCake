@@ -29,7 +29,9 @@
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
-	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
+	Router::connect('/portfolio', array('controller' => 'pages', 'action' => 'display', 'portfolio'));
+	Router::connect('/method', array('controller' => 'pages', 'action' => 'display', 'method'));
+	Router::connect('/hireus', array('controller' => 'pages', 'action' => 'display', 'hireus'));
 
 /**
  * Load all plugin routes.  See the CakePlugin documentation on 
