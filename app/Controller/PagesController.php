@@ -15,6 +15,16 @@
 			$this->render($path[0]);
 		}
 
+		public function portfolio() {
+
+			$item = func_get_args();
+
+			$portfolio = $this->Portfolio->findBySlug($item[0]);
+			$this->set('portfolio', $portfolio);
+
+			$this->render('portfolio_item');
+		}
+
 	}
 
 ?>

@@ -9,8 +9,7 @@
 
     <div class="element">
       <a href="/portfolio/<?php echo $item['Portfolio']['slug']; ?>">
-        <img src="http://www.placekitten.com/600/600" alt="">
-        <?php $this->Html->image($item['Portfolio']['list_image'], array('alt' => $item['Portfolio']['name'])); ?>
+        <?php echo $this->Html->image($item['Portfolio']['list_image'], array('alt' => $item['Portfolio']['name'])); ?>
         <div>
           <h3><?php echo $item['Portfolio']['name']; ?></h3>
           <p><?php echo $item['Portfolio']['description']; ?></p>
