@@ -15,5 +15,13 @@ class PortfolioItemImage extends AppModel {
       )
   );
 
+  public $actsAs = array(
+        'Translate' => array(
+            'title', 'paragraphs'
+        )
+    );
+
+  public $translateModel = 'PortfolioItemImageTranslation';
+
 }
 ?>

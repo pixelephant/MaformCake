@@ -57,9 +57,18 @@
   <section id="content">
     <?php echo $this->fetch('content'); ?>
   </section>
-
   <footer>
-
+   <p><?php echo __('contact', '<a href="mailto:info@maform.hu">info@maform.hu</a>', '<a href="tel:+36307472416">+36-30-747-2416</a>'); ?></p>
+    <ul>
+      <li><a href="http://www.facebook.com/maformdesign"><img src="img/facebook.png" alt="facebook"> <?php echo __('facebook'); ?></a></li>
+      <li><a href="http://www.be.net/maform"><img src="img/behance.png" alt="behance"> <?php echo __('behance'); ?></a></li>
+      <li><a href="http://www.maform.tumblr.com"><img src="img/tumblr.png" alt="tumblr"> <?php echo __('tumblr'); ?></a></li>
+      <li><a href="http://www.vimeo.com/user5301012"><img src="img/vimeo.png" alt="vimeo"> <?php echo __('vimeo'); ?></a></li>
+    </ul>
+    <p id="copy">
+      Webdesign by <a href="http://www.pixelephant.hu">Pixelephant Media</a>
+      <span>&copy; 2012 - Maform</span>
+    </p>
   </footer>
 
 
@@ -70,10 +79,10 @@
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
   <!-- scripts concatenated and minified via build script -->
-    <?php echo $this->Html->script('main'); ?>
-    <?php echo $this->Html->script('modernizr-2.5.3.min'); ?>
-  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-  <?php echo $this->fetch('scriptBottom'); ?>
+  <!--[if lt IE 9]>  <script src="js/ie.js"></script> <![endif]-->
+  <!--<script src="js/retina.js"></script>-->
+  <?php echo $this->Html->script('main'); ?>
+  <?php echo $this->Html->script('jquery.flexslider-min'); ?>
   <!-- end scripts -->
 
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.

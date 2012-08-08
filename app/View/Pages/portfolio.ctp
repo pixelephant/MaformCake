@@ -10,7 +10,7 @@
     <div class="element">
       <a href="/portfolio/<?php echo $item['Portfolio']['slug']; ?>">
         <?php echo $this->Html->image($item['Portfolio']['list_image'], array('alt' => $item['Portfolio']['name'])); ?>
-        <div>
+        <div class="data">
           <h3><?php echo $item['Portfolio']['name']; ?></h3>
           <p><?php echo $item['Portfolio']['description']; ?></p>
           <p>&rarr;</p>
@@ -22,7 +22,7 @@
 </section>
 
 <div id="cta" class="clearfix">
-  <a href="">Previous</a>
-  <a class="most" href=""><b>Hire us</b></a>
-  <a href="">Next</a>
+  <a href=""><?php echo __('previous'); ?></a>
+  <a class="most" href=""><b><?php echo __('Hire us'); ?></b></a>
+  <a href=""><?php echo __('next'); ?></a>
 </div>

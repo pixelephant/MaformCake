@@ -254,7 +254,16 @@ td { vertical-align: top; }
 }
 
 
+@font-face {
+    font-family: 'osi';
+    src: url('../fonts/opensans-italic-webfont.eot');
+    src: url('../fonts/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-italic-webfont.woff') format('woff'),
+         url('../fonts/opensans-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 @font-face {
     font-family: 'osli';
@@ -276,12 +285,25 @@ COLORS*/
 
 /* ==|== primary styles =====================================================
    Author:
-   ========================================================================== */
+   ========================================================================== 
+
+.lte-ie9 body{
+  max-width: 980px;
+  margin: 0 auto;
+}
+*/
+
+
+input[type="text"], input[type="email"], input[type="search"], input[type="password"], textarea {
+   -webkit-appearance: none; 
+  -moz-appearance: none; /* mobile firefox too! */
+  border-radius: 0 !important;
+}
 
 
 /* FONT RESIZE */
 
-hgroup h1{
+hgroup h1,h1{
   font-size: 2em;
 }
 
@@ -297,7 +319,7 @@ h3{
   font-size: 1.2em;
 }
 
-p,footer li a{
+p,footer li a,#language,#logout{
   font-size: 1em;
 }
 
@@ -314,13 +336,17 @@ label,.formy input[type="email"],.formy input[type="text"],.formy textarea,#form
 }
 
 @media (min-width:481px) and (max-width:979px){
-  hgroup h1{
+  hgroup h1,h1{
     font-size: 2.4em;
   }
 
-  hgroup h2,.formy input[type="submit"]{
+  hgroup h2{
     font-size: 1.8em;
   }
+
+.formy input[type="submit"]{
+    font-size: 1.6em;
+}
 
   h3{
    font-size: 2.4em;
@@ -330,7 +356,7 @@ label,.formy input[type="email"],.formy input[type="text"],.formy textarea,#form
   font-size: 1.7em;
 }
 
-  p,footer li a{
+  p,footer li a,#language,#logout{
     font-size: 1.2em;
   }
 
@@ -348,12 +374,16 @@ label,.formy input[type="email"],.formy input[type="text"],.formy textarea,#form
 }
 
 @media (min-width:980px){
-  hgroup h1{
+  hgroup h1,h1{
     font-size: 2.88em;
   }
 
-  hgroup h2,.formy input[type="submit"]{
+  hgroup h2{
     font-size: 2.16em;
+  }
+
+.formy input[type="submit"]{
+    font-size: 1.96em;
   }
 
   h3{
@@ -364,7 +394,7 @@ label,.formy input[type="email"],.formy input[type="text"],.formy textarea,#form
   font-size: 2em;
 }
 
-  p,footer li a{
+  p,footer li a,#language,#logout{
     font-size: 1.44em;
   }
 
@@ -395,10 +425,24 @@ html{
   color:#000;
 }
 
+strong{
+  font-family: 'osi';
+  font-weight: normal;
+}
+
 header,footer,#content,body{
   max-width: 1400px;
   margin: 0 auto;
   background: url(../img/pattern.png) repeat #aaa;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+ header,footer,#content,body{
+  background: url(../img/pattern@2x.png) repeat #aaa;
+  -webkit-background-size: 150px 150px;  
+  -moz-background-size: 150px 150px;  
+  background-size: 150px 150px;  
+  }
 }
 
 body{
@@ -409,12 +453,14 @@ body{
 
 header{
   width:100%;
+  position: relative;
 }
 
 #logo{
   text-align: center;
   width: 50%;
-  margin: 20px auto;
+  margin: 0 auto;
+  padding: 20px 0;
   display:block;
 }
 
@@ -435,25 +481,28 @@ nav{
 
 nav ul{
   overflow: hidden;
-  background:rgba(255,255,255,0.6);
+  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.6);  /* FF3+, Saf3+, Opera 10.10+, Chrome, IE9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FFFFFF,endColorstr=#99FFFFFF); /* IE6–IE9 */
+  zoom: 1;
+
 }
 
 nav li{
-    width:30%;
+    width:33.33333333%;
     float:left;
     text-align: center;
     padding:1% 0;
   }
 
-  nav li a:hover,nav li a:focus,nav li a.active{
+  .no-touch nav li a:hover,nav li a:focus,nav li a.active{
     color:#ba282e;
   }
 
-  nav li a:active{
+  .no-touch nav li a:active{
     position: relative;
     top: 1px;
   }
-
 
 nav li a{
   text-decoration: none;
@@ -462,27 +511,35 @@ nav li a{
   text-transform: uppercase;
   border-right: 1px solid #aaa;
   padding:1% 0;
+  -webkit-transition: all 0.3s ease-in-out;  /* Saf3.2+, Chrome */
+  -moz-transition: all 0.3s ease-in-out;  /* Firefox 4-15 */
+  -o-transition: all 0.3s ease-in-out;  /* Opera 10.5+ */
+  transition: all 0.3s ease-in-out;  /* Firefox 16+ */
 }
 
-#language a{
+nav li:last-child a{
   border: none;
-  background: url(../img/hu.png) no-repeat center center;
-  background-size: 20px 20px;
-  text-indent: -9999em;
-  opacity:0.8;
-    -webkit-transition: all 0.3s ease-in-out;  /* Saf3.2+, Chrome */
-     -moz-transition: all 0.3s ease-in-out;  /* Firefox 4-15 */
-       -o-transition: all 0.3s ease-in-out;  /* Opera 10.5+ */
-          transition: all 0.3s ease-in-out
-          ;  /* Firefox 16+ */
-}
-
-#language a:hover,#language a:focus{
-  opacity: 1;
 }
 
 #language{
-  width:10%;
+  position: absolute;
+  top:10px;
+  right:5px;
+}
+
+#language a{
+  -webkit-transition: all 0.3s ease-in-out;  /* Saf3.2+, Chrome */
+  -moz-transition: all 0.3s ease-in-out;  /* Firefox 4-15 */
+  -o-transition: all 0.3s ease-in-out;  /* Opera 10.5+ */
+  transition: all 0.3s ease-in-out;  /* Firefox 16+ */ 
+  color:#000;
+  opacity: 0.5;
+  text-decoration: none;
+  padding:15px 10px 15px 10px;
+}
+
+.no-touch #language a:hover,#language a:focus,#language a.active{
+  opacity: 1;
 }
 
 hgroup{
@@ -495,9 +552,28 @@ hgroup{
 
 hgroup {
   position: relative;
-  background: url(../img/pattern-red.jpg) repeat #ba282e;
+  background: url(../img/pattern-red.png) repeat #ba282e;
   color:white;
   overflow: hidden;
+}
+
+hgroup h2 span{
+  display: block;
+  opacity: 0.6;
+}
+
+hgroup h2 span a{
+  color:white;
+  text-decoration: underline;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+ hgroup{
+  background: url(../img/pattern-red@2x.png) repeat #ba282e;
+  -webkit-background-size: 150px 150px;  
+  -moz-background-size: 150px 150px;  
+  background-size: 150px 150px;  
+  }
 }
 
 hgroup h1,hgroup h2{
@@ -531,9 +607,14 @@ hgroup h2{
   max-width: 320px;
 }
 
-.member h3,.step h3{
+.member h3,.step h3,.text h3{
   font-family: 'oscb';
   text-transform: uppercase;
+  margin-top: 3%;
+  margin-bottom: 0;
+}
+
+.member p,.step p,.text p{
   margin-top: 0;
 }
 
@@ -593,22 +674,27 @@ hgroup h2{
   width:90%;
   padding: 0 5%;
   margin-bottom: -50px;
+  overflow: hidden;
 }
 
 #cta a{
-  width:20%;
+  position: relative;
+  z-index: 1;
+  width:30%;
   padding-top: 30px;
-  margin: 0 5%;
   float:left;
   text-decoration: none;
   color:#000;
   text-align: center;
   border-bottom:1px dashed;
-  opacity: 0.8;
+  opacity:0.6;
+  -webkit-transition: all 0.3s ease-in-out;  /* Saf3.2+, Chrome */
+  -moz-transition: all 0.3s ease-in-out;  /* Firefox 4-15 */
+  -o-transition: all 0.3s ease-in-out;  /* Opera 10.5+ */
+  transition: all 0.3s ease-in-out;  /* Firefox 16+ */
 }
 
 #cta a:hover,#cta a:focus{
-  border-bottom: 1px solid;
   opacity: 1;
 }
 
@@ -619,6 +705,7 @@ hgroup h2{
   border:none !important;
   margin: 0 !important;
   opacity: 1 !important;
+  z-index: 2 !important;
 }
 
 .most b{
@@ -633,6 +720,10 @@ hgroup h2{
   font-family: 'oscb';
   text-transform: uppercase;
   border: 10px solid #e4e4e4;
+  -webkit-transition: all 0.3s ease-in-out;  /* Saf3.2+, Chrome */
+  -moz-transition: all 0.3s ease-in-out;  /* Firefox 4-15 */
+  -o-transition: all 0.3s ease-in-out;  /* Opera 10.5+ */
+  transition: all 0.3s ease-in-out;  /* Firefox 16+ */
 }
 
 .most:hover b,.most:focus b{
@@ -708,11 +799,12 @@ hgroup h2{
   background:white;
   padding:0;
   margin: 0;
-  border-bottom:1px dashed #000;
+  border-bottom:1px dashed #000 !important;
   color:#ba282e;
   font-family: 'osli';
   padding:1%;
   text-align: center;
+  border-radius: none;
 }
 
 .formy textarea{
@@ -725,11 +817,20 @@ hgroup h2{
   margin: 0;
   background:none;
   width:100%;
-  padding:1%;
+  padding:2% 1%;
   font-family: 'oscb';
   background:#ba282e;
-  color:#fff;
+  color:#fff !important;
   text-transform: uppercase;
+  border-radius: 0 !important;
+  -webkit-transition: all 0.3s ease-in-out;  /* Saf3.2+, Chrome */
+  -moz-transition: all 0.3s ease-in-out;  /* Firefox 4-15 */
+  -o-transition: all 0.3s ease-in-out;  /* Opera 10.5+ */
+  transition: all 0.3s ease-in-out;  /* Firefox 16+ */
+}
+
+.formy input[type="submit"]:disabled,.formy input[type="submit"][disabled=disabled],.formy input[type="submit"].disabled{
+  color:#fff !important;
 }
 
 .formy input[type="submit"]:hover,.formy input[type="submit"]:focus{
@@ -745,7 +846,7 @@ hgroup h2{
 
 #data{
   width: 90%;
-  padding: 0 20px;
+  padding: 0 5%;
   text-align: center;
 }
 
@@ -767,6 +868,25 @@ hgroup h2{
   max-width: 480px;
 }
 
+#project .text h3{
+  text-transform: uppercase;
+}
+
+#project .text a,#project figure p a{
+  color: #000;
+  text-decoration: underline;
+  opacity:0.8;
+  -webkit-transition: all 0.3s ease-in-out;  /* Saf3.2+, Chrome */
+     -moz-transition: all 0.3s ease-in-out;  /* Firefox 4-15 */
+       -o-transition: all 0.3s ease-in-out;  /* Opera 10.5+ */
+          transition: all 0.3s ease-in-out
+          ;  /* Firefox 16+ */
+}
+
+.no-touch .text a:hover,.no-touch #project figure p a:hover,#project .text a:focus,#project figure p a:focus{
+  opacity:1;
+}
+
 #project h3{
   font-family: 'oscb';
 }
@@ -777,6 +897,22 @@ hgroup h2{
 
 #project figure{
   margin: 80px 0;
+}
+
+#project figure div{
+  position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+
+#project figure div iframe{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #project figure p{  
@@ -799,7 +935,7 @@ hgroup h2{
   color:#fff;
 }
 
-.no-touch #portfolio .element div{
+.no-touch #portfolio .element .data{
   bottom: -100%;
    -webkit-transition: all 0.3s ease-in-out;  /* Saf3.2+, Chrome */
      -moz-transition: all 0.3s ease-in-out;  /* Firefox 4-15 */
@@ -808,7 +944,7 @@ hgroup h2{
           ;  /* Firefox 16+ */
 }
 
-.no-touch #portfolio .element a:hover div,.no-touch #portfolio .element a:focus{
+.no-touch #portfolio .element a:hover .data,.no-touch #portfolio .element a:focus{
   bottom:0;
 }
 
@@ -818,7 +954,7 @@ hgroup h2{
   overflow:hidden;
 }
 
-#portfolio .element div{
+#portfolio .element .data{
   position: absolute;
   bottom:0;
   background-color: transparent;
@@ -829,6 +965,11 @@ hgroup h2{
   text-align: center;
   padding:5% 0;
 }
+
+.badge{
+  position: absolute;
+  top:3%;
+  left: 1%;
 }
 
 #portfolio .element p,#portfolio .element h3{
@@ -841,7 +982,7 @@ hgroup h2{
 }
 
 #portfolio .element p{
-  margin: 0;
+  margin: 0 auto;
 }
 
 #portfolio .element h3{
@@ -876,16 +1017,10 @@ hgroup h2{
 }
 
 #portfolio-nav a{
-  color: #fff;
-  text-decoration: none;
   width:31.33333%;
   float: left;
   padding:1%;
   margin: 0;
-}
-
-#portfolio-nav a:hover,#portfolio-nav a:focus{
-  text-decoration: underline;
 }
 
 .prev{
@@ -896,6 +1031,7 @@ hgroup h2{
   text-align: center;
   font-family: 'oscb';
   margin: 0;
+  text-transform: uppercase;
 }
 
 .next{
@@ -904,7 +1040,7 @@ hgroup h2{
 
 footer{
   width:90%;
-  padding: 100px 5% 20px 5%;
+  padding: 100px 5% 0 5%;
   background:#000;
   overflow: hidden;
 }
@@ -913,14 +1049,15 @@ footer p{
   margin:0 auto;
   width: 90%;
   padding:5%;
-  max-width: 480px;
   text-align: center;
   color: #fff;
 }
 
 footer p a{
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px dashed #fff;
+  padding-bottom: 2px;
 }
 
 footer p span{
@@ -934,16 +1071,33 @@ footer ul{
 }
 
 footer li{
-  padding:2%;
+  padding:0.5%;
   width: 96%;
-  border-bottom: 1px dashed #fff;
+  border-bottom: 1px dashed #949494;
   text-align: center;
+  overflow: hidden;
 }
 
-footer ul a{
+footer li a img{
+  vertical-align: middle;
+  margin-right: 20px;
+  float:left;
+  position: relative;
+  opacity: 0.8;
+}
+
+footer a,#portfolio-nav a{
   color: #fff;
   text-decoration: none;
+  opacity:0.6;
+  -webkit-transition: all 0.3s ease-in-out;  /* Saf3.2+, Chrome */
+  -moz-transition: all 0.3s ease-in-out;  /* Firefox 4-15 */
+  -o-transition: all 0.3s ease-in-out;  /* Opera 10.5+ */
+  transition: all 0.3s ease-in-out;  /* Firefox 16+ */
+}
 
+.no-touch footer a:hover,footer a:focus,#portfolio-nav a:hover,#portfolio-nav a:focus{
+  opacity: 1;
 }
 
 /* ==|== media queries ======================================================
@@ -954,7 +1108,14 @@ footer ul a{
 
 /* Landscape phones and down */
   @media (max-width: 480px) {
-   
+   #form .clearfix a{
+      border-radius: 75px;
+      width:75px;
+      height:75px;
+      line-height: 75px;
+    }
+
+
   }
  
   /* Landscape phone to portrait tablet */
@@ -962,20 +1123,33 @@ footer ul a{
     nav li{
       padding:3% 0 !important;
     }
+    #cta a{
+      width:30%;
+      margin-left:0;
+      margin-right:0;
+    }
   }
  
 
 
   /*KB tablet*/
   @media (min-width: 701px) {
-
+    #cta a{
+      width:20%;
+  padding-top: 30px;
+  margin: 0 5%;
+    }
     footer li{
       float: left;
       width:44%;
     }
 
+    footer li a img{
+      top:3px;
+    }
+
     footer li:nth-child(odd){
-      margin-right: 2%;
+      margin-right: 4%;
     }
 
     #portfolio .element{
@@ -1005,7 +1179,18 @@ footer ul a{
   }
 
   @media (min-width: 980px){
-     
+  #project .text{
+    width: 40%;
+    float:left;
+    text-align: center;
+    margin: 80px auto;
+    position: relative;
+    max-width: none; 
+    padding:0 5%;
+  }
+  #project .text:nth-child(odd){
+    margin-right: 0;
+  }
   }
 
    /* NOT mobile */
@@ -1036,7 +1221,7 @@ footer ul a{
     }
 
     .cv{
-        right:20%;
+        right:17%;
       }
   }
 

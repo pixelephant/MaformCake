@@ -5,12 +5,20 @@ class Portfolio extends AppModel {
 		'PortfolioItemText' => array(
         'className'  => 'PortfolioItemText',
         'order'      => 'id DESC'
-    ),
-    'PortfolioItemImage' => array(
-        'className'  => 'PortfolioItemImage',
-        'order'      => 'id DESC'
-    )
+        ),
+        'PortfolioItemImage' => array(
+            'className'  => 'PortfolioItemImage',
+            'order'      => 'id DESC'
+        )
 	);
+
+    public $actsAs = array(
+        'Translate' => array(
+            'description', 'data'
+        )
+    );
+
+    public $translateModel = 'PortfolioTranslation';
 
 	public $validate = array(
         'name' => array(
