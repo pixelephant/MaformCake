@@ -9,23 +9,11 @@
   <?php header('Content-type: text/html; charset=UTF-8') ;?>
   <?php echo $this->Html->charset('utf-8'); ?>
 
+  <?php $current_page = $this->params->url; ?>
+
   <!-- Use the .htaccess and remove these lines to avoid edge case issues.
        More info: h5bp.com/i/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<?php 
-
-  $a = explode("/",$_SERVER['REQUEST_URI']);
-
-  $menu['index'] = '';
-  $menu['hireus'] = '';
-  $menu['method'] = '';
-  $menu['portfolio'] = '';
-
-  $item = explode(".",$a[count($a)-1]);
-
-  $menu[$item[0]] = "active";
-
-?>
   <title>Maform</title>
   <meta name="description" content="">
   <meta name="apple-mobile-web-app-capable" content="yes" />  
@@ -57,9 +45,9 @@
       <?php echo $this->Html->Link($this->Html->image('uj_logo.png', array('alt' => 'Maform')), '/', array('escape' => false, 'id' => 'logo')); ?>
     <nav>
       <ul>
-        <li><?php echo $this->Html->link('Method', '/method', array('class' => 'active')); ?></li>
-        <li><?php echo $this->Html->link('Portfolio', '/portfolio', array('class' => 'active')); ?></li>
-        <li><?php echo $this->Html->link('Hire us', '/hireus', array('class' => 'active')); ?></li>
+        <li><?php echo $this->Html->link('Method', '/method', ($current_page == 'method' ? array('class' => 'active') : '')); ?></li>
+        <li><?php echo $this->Html->link('Portfolio', '/portfolio', ($current_page == 'portfolio' ? array('class' => 'active') : '')); ?></li>
+        <li><?php echo $this->Html->link('Hire us', '/hireus', ($current_page == 'hireus' ? array('class' => 'active') : '')); ?></li>
         <li id="language"><a href="#">Hu</a></li>
     </ul>
     </nav>
