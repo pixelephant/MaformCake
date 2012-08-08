@@ -9,6 +9,17 @@
   <?php header('Content-type: text/html; charset=UTF-8') ;?>
   <?php echo $this->Html->charset('utf-8'); ?>
 
+  <?php $current_lang = CakeSession::read('Config.language'); ?>
+  <?php $other_lang = $this->params->lang == 'hu' ? 'en' : 'hu'; ?>
+
+  <?php 
+    $url = explode("/", $this->here);
+    unset($url[0]);
+    unset($url[1]);
+    $url[2] = $other_lang;
+    $other_url = implode("/", $url);
+  ?>
+
   <?php $current_page = $this->params->url; ?>
 
   <!-- Use the .htaccess and remove these lines to avoid edge case issues.
@@ -45,10 +56,11 @@
       <?php echo $this->Html->Link($this->Html->image('uj_logo.png', array('alt' => 'Maform')), '/', array('escape' => false, 'id' => 'logo')); ?>
     <nav>
       <ul>
-        <li><?php echo $this->Html->link('Method', '/method', ($current_page == 'method' ? array('class' => 'active') : '')); ?></li>
-        <li><?php echo $this->Html->link('Portfolio', '/portfolio', ($current_page == 'portfolio' ? array('class' => 'active') : '')); ?></li>
-        <li><?php echo $this->Html->link('Hire us', '/hireus', ($current_page == 'hireus' ? array('class' => 'active') : '')); ?></li>
-        <li id="language"><a href="#">Hu</a></li>
+        <li><?php echo $this->Html->link('Method', '/' . $current_lang . '/method', ($current_page == 'method' ? array('class' => 'active') : '')); ?></li>
+        <li><?php echo $this->Html->link('Portfolio', '/' . $current_lang . '/portfolio', ($current_page == 'portfolio' ? array('class' => 'active') : '')); ?></li>
+        <li><?php echo $this->Html->link('Hire us', '/' . $current_lang . '/hireus', ($current_page == 'hireus' ? array('class' => 'active') : '')); ?></li>
+        <li id="language"><a href="<?php echo $this->here; ?>"><?php echo $other_lang; ?></a></li>
+        <li id="language"><?php echo $this->Html->Link($other_lang, "/" . $other_url); ?></li>
     </ul>
     </nav>
     <?php echo $this->fetch('home-slider'); ?>

@@ -172,7 +172,7 @@ msgid "form_budget"
 msgstr "Keret"
 
 msgid "form_description"
-msgstr "Leírás"
+msgstr "Description of work"
 
 msgid "form_send"
 msgstr "Küldés"

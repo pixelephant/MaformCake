@@ -25,16 +25,20 @@
  * its action called 'display', and we pass a param to select the view file
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
-	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+	// Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+
+	Router::redirect('/', '/hu');
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
-	Router::connect('/portfolio', array('controller' => 'pages', 'action' => 'display', 'portfolio'));
+	Router::connect('/:lang', array('controller' => 'pages', 'action' => 'display', 'home'), array('persist' => array('lang')));
 
-	Router::connect('/portfolio/*', array('controller' => 'pages', 'action' => 'portfolio_item'));
+	Router::connect('/:lang/portfolio', array('controller' => 'pages', 'action' => 'display', 'portfolio'));
 
-	Router::connect('/method', array('controller' => 'pages', 'action' => 'display', 'method'));
-	Router::connect('/hireus', array('controller' => 'pages', 'action' => 'display', 'hireus'));
+	Router::connect('/:lang/portfolio/*', array('controller' => 'pages', 'action' => 'portfolio_item'));
+
+	Router::connect('/:lang/method', array('controller' => 'pages', 'action' => 'display', 'method'));
+	Router::connect('/:lang/hireus', array('controller' => 'pages', 'action' => 'display', 'hireus'));
 
 /**
  * Load all plugin routes.  See the CakePlugin documentation on 

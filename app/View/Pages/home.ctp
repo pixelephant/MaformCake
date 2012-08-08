@@ -16,8 +16,8 @@
 
 <?php $this->Html->css('flexslider', null, array('inline' => false)); ?>
 <hgroup>
-   <h1>Industrial designers &trade;</h1>
-  <h2>We are</h2>
+  <h1><?php echo __('home_title_first_line'); ?></h1>
+  <h2><?php echo __('home_title_second_line'); ?></h2>
 </hgroup>
 <section id="members">
   <div class="member" id="peti">
