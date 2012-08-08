@@ -31,7 +31,7 @@
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
-	Router::connect('/email', array('controller' => 'email', 'action' => 'send', 'method' => 'POST'));
+	Router::connect('/email', array('controller' => 'emails', 'action' => 'send', 'method' => 'POST'));
 
 	Router::connect('/:lang', array('controller' => 'pages', 'action' => 'display', 'home'), array('persist' => array('lang')));
 

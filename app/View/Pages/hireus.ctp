@@ -19,7 +19,7 @@
     </fieldset>
     <fieldset id="budget-field">
       <label for="offer-budget"><?php echo __('form_budget'); ?></label>
-      <select name="offer-budget" id="budget">
+      <select name="offer-budget" id="offer-budget">
         <option value="10000&euro;">~ 10 000 &euro;</option>
         <option value="50000&euro;">~ 50 000 &euro;</option>
         <option value="100000&euro;">~ 100 000 &euro;</option>

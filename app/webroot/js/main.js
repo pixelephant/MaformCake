@@ -124,8 +124,9 @@ $(document).ready(function(){
 						},
 			dataType: "json",
 		  success: function(resp){
+		  	console.log(resp.status);
 		  	if(resp.status == 'true'){
-		  		$(this).find("input[type='submit']").css("background","green").attr("readonly","readonly").addClass("disabled").val("✓ Köszönjük.");
+		  		$("#offer-form").find("input[type='submit']").css("background","green").attr("readonly","readonly").addClass("disabled").val("✓ Köszönjük.");
 		  	}
 		}});
 		return false;

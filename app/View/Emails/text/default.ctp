@@ -15,5 +15,11 @@
  * @since         CakePHP(tm) v 0.10.0.1076
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
+
+
+echo '<p>Név: ' . $name . '</p>';
+echo '<p>Email: ' . $email . '</p>';
+echo '<p>Leírás: ' . $description . '</p>';
+echo '<p>Budget: ' . $budget . '</p>';
+
 ?>
-<?php echo $content; ?>

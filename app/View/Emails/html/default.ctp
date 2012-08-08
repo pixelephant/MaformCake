@@ -17,9 +17,15 @@
  */
 ?>
 <?php
-$content = explode("\n", $content);
+// $content = explode("\n", $content);
 
-foreach ($content as $line):
-	echo '<p> ' . $line . "</p>\n";
-endforeach;
+// foreach ($content as $line):
+// 	echo '<p> ' . $line . "</p>\n";
+// endforeach;
+
+echo '<p>Név: ' . $name . '</p>';
+echo '<p>Email: ' . $email . '</p>';
+echo '<p>Leírás: ' . $description . '</p>';
+echo '<p>Budget: ' . $budget . '</p>';
+
 ?>
