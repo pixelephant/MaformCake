@@ -29,9 +29,10 @@
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
-	Router::connect('/portfolio/*', array('controller' => 'pages', 'action' => 'portfolio'));
-
 	Router::connect('/portfolio', array('controller' => 'pages', 'action' => 'display', 'portfolio'));
+
+	Router::connect('/portfolio/*', array('controller' => 'pages', 'action' => 'portfolio_item'));
+
 	Router::connect('/method', array('controller' => 'pages', 'action' => 'display', 'method'));
 	Router::connect('/hireus', array('controller' => 'pages', 'action' => 'display', 'hireus'));
 

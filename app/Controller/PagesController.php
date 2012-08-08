@@ -15,11 +15,11 @@
 			$this->render($path[0]);
 		}
 
-		public function portfolio() {
+		public function portfolio_item() {
 
-			$item = func_get_args();
+			$path = func_get_args();
 
-			$portfolio = $this->Portfolio->findBySlug($item[0]);
+			$portfolio = $this->Portfolio->findBySlug($path[0]);
 			$this->set('portfolio', $portfolio);
 
 			$this->render('portfolio_item');
