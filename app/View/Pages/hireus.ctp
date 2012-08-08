@@ -8,7 +8,7 @@
     <a class="active" href="#" data-type="offer"><?php echo __('offer'); ?></a>
     <a href="#" data-type="contact"><?php echo __('contact'); ?></a>
   </div>
-  <form action="/" id="offer-form" class="formy" validate>
+  <form action="/email" method="POST" id="offer-form" class="formy" validate>
     <fieldset>
       <label for="offer-name"><?php echo __('form_name'); ?></label>
       <input type="text" name="offer-name" id="offer-name" required>

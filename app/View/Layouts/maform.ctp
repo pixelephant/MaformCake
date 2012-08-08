@@ -72,10 +72,10 @@
   <footer>
    <p><?php echo __('contact', '<a href="mailto:info@maform.hu">info@maform.hu</a>', '<a href="tel:+36307472416">+36-30-747-2416</a>'); ?></p>
     <ul>
-      <li><a href="http://www.facebook.com/maformdesign"><img src="img/facebook.png" alt="facebook"> <?php echo __('facebook'); ?></a></li>
-      <li><a href="http://www.be.net/maform"><img src="img/behance.png" alt="behance"> <?php echo __('behance'); ?></a></li>
-      <li><a href="http://www.maform.tumblr.com"><img src="img/tumblr.png" alt="tumblr"> <?php echo __('tumblr'); ?></a></li>
-      <li><a href="http://www.vimeo.com/user5301012"><img src="img/vimeo.png" alt="vimeo"> <?php echo __('vimeo'); ?></a></li>
+      <li><a href="http://www.facebook.com/maformdesign"><?php echo $this->Html->image('facebook.png', array('alt' => 'Facebook')); ?> <?php echo __('facebook'); ?></a></li>
+      <li><a href="http://www.be.net/maform"><?php echo $this->Html->image('behance.png', array('alt' => 'Behance')); ?> <?php echo __('behance'); ?></a></li>
+      <li><a href="http://www.maform.tumblr.com"><?php echo $this->Html->image('tumblr.png', array('alt' => 'Tumblr')); ?> <?php echo __('tumblr'); ?></a></li>
+      <li><a href="http://www.vimeo.com/user5301012"><?php echo $this->Html->image('vimeo.png', array('alt' => 'Vimeo')); ?> <?php echo __('vimeo'); ?></a></li>
     </ul>
     <p id="copy">
       Webdesign by <a href="http://www.pixelephant.hu">Pixelephant Media</a>

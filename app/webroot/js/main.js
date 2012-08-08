@@ -114,7 +114,20 @@ $(document).ready(function(){
 	})
 
 	$("#offer-form").submit(function(){
-		$(this).find("input[type='submit']").css("background","green").attr("readonly","readonly").addClass("disabled").val("✓ Köszönjük.");
+		$.ajax({
+		  type: 'POST',
+		  url: "/cakephp/email",
+			data: {name : $("#offer-name").val(),
+						email : $("#offer-email").val(),
+						budget : $("#offer-budget").val(),
+						description : $("#offer-description").val()
+						},
+			dataType: "json",
+		  success: function(resp){
+		  	if(resp.status == 'true'){
+		  		$(this).find("input[type='submit']").css("background","green").attr("readonly","readonly").addClass("disabled").val("✓ Köszönjük.");
+		  	}
+		}});
 		return false;
 	});
 
