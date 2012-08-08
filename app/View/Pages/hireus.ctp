@@ -1,24 +1,24 @@
 <?php $this->layout = 'maform'; ?>
 <hgroup>
-  <h1>Hire us</h1>
-  <h2>let's create something cool together!</h2>
+  <h1><?php echo __('hireus_title_first_line'); ?></h1>
+  <h2><?php echo __('hireus_title_second_line'); ?></h2>
 </hgroup>
 <section id="form">
   <div class="clearfix">
-    <a class="active" href="#" data-type="offer">Offer</a>
-    <a href="#" data-type="contact">Contact</a>
+    <a class="active" href="#" data-type="offer"><?php echo __('offer'); ?></a>
+    <a href="#" data-type="contact"><?php echo __('contact'); ?></a>
   </div>
   <form action="/" id="offer-form" class="formy" validate>
     <fieldset>
-      <label for="offer-name">Your name/Company name</label>
+      <label for="offer-name"><?php echo __('form_name'); ?></label>
       <input type="text" name="offer-name" id="offer-name" required>
     </fieldset>
     <fieldset>
-      <label for="offer-email">Your email address</label>
+      <label for="offer-email"><?php echo __('form_email'); ?></label>
       <input type="email" name="offer-email" id="offer-email" required>
     </fieldset>
     <fieldset id="budget-field">
-      <label for="offer-budget">Budget</label>
+      <label for="offer-budget"><?php echo __('form_budget'); ?></label>
       <select name="offer-budget" id="budget">
         <option value="10000&euro;">~ 10 000 &euro;</option>
         <option value="50000&euro;">~ 50 000 &euro;</option>
@@ -27,15 +27,15 @@
       </select>
     </fieldset>
     <fieldset>
-      <label id="description-label" for="offer-description">Description of the work</label>
+      <label id="description-label" for="offer-description"><?php echo __('form_description'); ?></label>
       <textarea name="offer-description" id="offer-description" cols="30" rows="10" required></textarea>
     </fieldset>
-    <input type="submit" value="Send">
+    <input type="submit" value="<?php echo __('form_send'); ?>">
   </form>
 </section>
 
 <div id="cta" class="clearfix">
-  <a href="">Who we are</a>
-  <a class="most" href=""><b>Works</b></a>
-  <a href="">Hire us</a>
+  <a href=""><?php echo __('Who we are'); ?></a>
+  <a class="most" href=""><b><?php echo __('Works'); ?></b></a>
+  <a href=""><?php echo __('Hire us'); ?></a>
 </div>

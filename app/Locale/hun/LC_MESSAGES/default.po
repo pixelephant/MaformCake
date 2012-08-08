@@ -144,3 +144,35 @@ msgstr "Élvezet :)"
 
 msgid "enjoy_text"
 msgstr "The product is finished."
+
+# Hire us
+
+msgid "Who we are"
+msgstr "Kik vagyunk"
+
+msgid "hireus_title_first_line"
+msgstr "hire us"
+
+msgid "hireus_title_second_line"
+msgstr "let's create something cool together!"
+
+msgid "offer"
+msgstr "árajánlat"
+
+msgid "contact"
+msgstr "kapcsolat"
+
+msgid "form_name"
+msgstr "Ön neve / Cégnév"
+
+msgid "form_email"
+msgstr "Ön email címe"
+
+msgid "form_budget"
+msgstr "Keret"
+
+msgid "form_description"
+msgstr "Leírás"
+
+msgid "form_send"
+msgstr "Küldés"
