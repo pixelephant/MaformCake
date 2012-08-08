@@ -116,7 +116,7 @@ $(document).ready(function(){
 	$("#offer-form").submit(function(){
 		$.ajax({
 		  type: 'POST',
-		  url: "/cakephp/email",
+		  url: "/email",
 			data: {name : $("#offer-name").val(),
 						email : $("#offer-email").val(),
 						budget : $("#offer-budget").val(),
