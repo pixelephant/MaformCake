@@ -18,9 +18,8 @@
     unset($url[1]);
     unset($url[2]);
     $other_url = implode("/", $url);
+    $current_page = $url[3];
   ?>
-
-  <?php $current_page = $this->params->url; ?>
 
   <!-- Use the .htaccess and remove these lines to avoid edge case issues.
        More info: h5bp.com/i/378 -->
@@ -75,7 +74,6 @@
     </nav>
     <?php echo $this->fetch('home-slider'); ?>
   </header>
-
   <section id="content">
     <?php echo $this->fetch('content'); ?>
   </section>
