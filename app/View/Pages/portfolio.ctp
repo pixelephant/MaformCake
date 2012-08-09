@@ -8,7 +8,7 @@
   <?php foreach($portfolio_items as $item): ?>
 
     <div class="element">
-      <a href="/portfolio/<?php echo $item['Portfolio']['slug']; ?>">
+      <a href="<?php echo $this->webroot; ?>/portfolio/<?php echo $item['Portfolio']['slug']; ?>">
         <?php echo $this->Html->image($item['Portfolio']['list_image'], array('alt' => $item['Portfolio']['name'])); ?>
         <div class="data">
           <h3><?php echo $item['Portfolio']['name']; ?></h3>
