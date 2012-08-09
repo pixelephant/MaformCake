@@ -153,11 +153,11 @@ msgstr "Prezentáció"
 msgid "present_text"
 msgstr "Valósághű és stílusos illusztrációk segítenek bemutatni és kommunikálni a terveinket."
 
-#: Enjoy
+#: Feedback
 msgid "feedback_title"
 msgstr "Visszacsatolás"
 
-msgid "enjoy_text"
+msgid "feedback_text"
 msgstr "Nem felejtjük el egyik munkánkat sem - figyelemmel kísérjük az általunk tervezett termékek életútját és tanulunk belőle."
 
 # Hire us
