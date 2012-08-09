@@ -44,7 +44,6 @@
   $this->end();
 ?>
 
-<?php $this->Html->css('flexslider', null, array('inline' => false)); ?>
 <hgroup>
   <h1><?php echo __('home_title_first_line'); ?></h1>
   <h2><?php echo __('home_title_second_line'); ?></h2>
