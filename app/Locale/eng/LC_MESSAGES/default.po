@@ -96,13 +96,13 @@ msgid "contact"
 msgstr "Contact us at %s or at %s"
 
 msgid "Hire us"
-msgstr "Dolgozz velünk"
+msgstr "Hire us"
 
 msgid "About"
-msgstr "Rólunk"
+msgstr "About"
 
 msgid "Works"
-msgstr "Munkáink"
+msgstr "Works"
 
 msgid "Our method"
 msgstr "Our method"

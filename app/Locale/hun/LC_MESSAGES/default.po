@@ -105,7 +105,7 @@ msgid "Hire us"
 msgstr "Dolgozz velünk"
 
 msgid "Our method"
-msgstr "Our method"
+msgstr "Így dolgozunk"
 
 #Portfolio
 #: View/Pages/portfolio.ctp
