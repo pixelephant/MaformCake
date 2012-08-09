@@ -1,4 +1,5 @@
 <?php $this->layout = 'maform'; ?>
+<?php $lang = CakeSession::read('Config.language'); ?>
 <hgroup>
   <h1>Works</h1>
   <h2>We are proud of</h2>
@@ -22,7 +23,7 @@
 </section>
 
 <div id="cta" class="clearfix">
-  <a href=""><?php echo __('previous'); ?></a>
-  <a class="most" href=""><b><?php echo __('Hire us'); ?></b></a>
-  <a href=""><?php echo __('next'); ?></a>
+  <a href="<?php echo $this->webroot; ?><?php echo $lang ?>"><?php echo __('About'); ?></a>
+  <a class="most" href="<?php echo $this->webroot; ?><?php echo $lang ?>/hireus"><b><?php echo __('Hire us'); ?></b></a>
+  <a href="<?php echo $this->webroot; ?><?php echo $lang ?>/method"><?php echo __('Our method'); ?></a>
 </div>

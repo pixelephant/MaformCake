@@ -63,8 +63,8 @@
         </div>
       </a>
       <span id="language">
-        <?php echo $this->Html->Link('hu', "/hu" . $other_url, array('class' => $current_lang == 'hu' ? 'active' : '')); ?> / 
-        <?php echo $this->Html->Link('en', "/en" . $other_url, array('class' => $current_lang == 'en' ? 'active' : '')); ?>
+        <?php echo $this->Html->Link('hu', "/hu/" . $other_url, array('class' => $current_lang == 'hu' ? 'active' : '')); ?> / 
+        <?php echo $this->Html->Link('en', "/en/" . $other_url, array('class' => $current_lang == 'en' ? 'active' : '')); ?>
       </span>
     <nav>
       <ul>
