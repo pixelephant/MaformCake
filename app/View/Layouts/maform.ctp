@@ -16,7 +16,7 @@
     $url = explode("/", $this->here);
     unset($url[0]);
     unset($url[1]);
-    $url[2] = $other_lang;
+    unset($url[2]);
     $other_url = implode("/", $url);
   ?>
 
@@ -53,15 +53,25 @@
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <header>
-      <?php echo $this->Html->Link($this->Html->image('uj_logo.png', array('alt' => 'Maform')), '/', array('escape' => false, 'id' => 'logo')); ?>
+      <a id="logo" href="/<?php echo $current_lang; ?>">
+        <div data-picture data-alt="Maform logó">
+          <div data-src="img/logo.png"></div>
+          <div data-src="img/logo@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+          <noscript>
+            <?php echo $this->Html->image('logo.png', array('alt' => 'Maform logó')); ?>
+          </noscript>
+        </div>
+      </a>
+      <span id="language">
+        <?php echo $this->Html->Link('hu', "/hu/" . $other_url, array('class' => $current_lang == 'hu' ? 'active' : '')); ?> / 
+        <?php echo $this->Html->Link('en', "/en/" . $other_url, array('class' => $current_lang == 'en' ? 'active' : '')); ?>
+      </span>
     <nav>
       <ul>
         <li><?php echo $this->Html->link(__('menu_method'), '/' . $current_lang . '/method', ($current_page == 'method' ? array('class' => 'active') : '')); ?></li>
         <li><?php echo $this->Html->link(__('menu_portfolio'), '/' . $current_lang . '/portfolio', ($current_page == 'portfolio' ? array('class' => 'active') : '')); ?></li>
         <li><?php echo $this->Html->link(__('menu_hireus'), '/' . $current_lang . '/hireus', ($current_page == 'hireus' ? array('class' => 'active') : '')); ?></li>
-        <li id="language"><a href="<?php echo $this->here; ?>"><?php echo $other_lang; ?></a></li>
-        <li id="language"><?php echo $this->Html->Link($other_lang, "/" . $other_url); ?></li>
-    </ul>
+      </ul>
     </nav>
     <?php echo $this->fetch('home-slider'); ?>
   </header>
@@ -72,10 +82,54 @@
   <footer>
    <p><?php echo __('contact_email', '<a href="mailto:info@maform.hu">info@maform.hu</a>', '<a href="tel:+36307472416">+36-30-747-2416</a>'); ?></p>
     <ul>
-      <li><a href="http://www.facebook.com/maformdesign"><?php echo $this->Html->image('facebook.png', array('alt' => 'Facebook')); ?> <?php echo __('facebook'); ?></a></li>
-      <li><a href="http://www.be.net/maform"><?php echo $this->Html->image('behance.png', array('alt' => 'Behance')); ?> <?php echo __('behance'); ?></a></li>
-      <li><a href="http://www.maform.tumblr.com"><?php echo $this->Html->image('tumblr.png', array('alt' => 'Tumblr')); ?> <?php echo __('tumblr'); ?></a></li>
-      <li><a href="http://www.vimeo.com/user5301012"><?php echo $this->Html->image('vimeo.png', array('alt' => 'Vimeo')); ?> <?php echo __('vimeo'); ?></a></li>
+      <li>
+        <a href="http://www.facebook.com/maformdesign">
+          <div data-picture data-alt="Maform on Facebook">
+            <div data-src="img/facebook.png"></div>
+            <div data-src="img/facebook@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+            <noscript>
+              <?php echo $this->Html->image('facebook.png', array('alt' => 'Facebook')); ?> 
+            </noscript>
+          </div>
+          <?php echo __('facebook'); ?>
+        </a>
+      </li>
+      <li>
+        <a href="http://www.be.net/maform">
+          <div data-picture data-alt="Maform on Behance">
+            <div data-src="img/behance.png"></div>
+            <div data-src="img/behance@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+            <noscript>
+              <?php echo $this->Html->image('behance.png', array('alt' => 'Behance')); ?>
+            </noscript>
+          </div>
+          <?php echo __('behance'); ?>
+        </a>
+      </li>
+      <li>
+        <a href="http://www.maform.tumblr.com">
+          <div data-picture data-alt="Maform on Tumblr">
+            <div data-src="img/tumblr.png"></div>
+            <div data-src="img/tumblr@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+            <noscript>
+              <?php echo $this->Html->image('tumblr.png', array('alt' => 'Tumblr')); ?>
+            </noscript>
+          </div>
+          <?php echo __('tumblr'); ?>
+        </a>
+      </li>
+      <li>
+        <a href="http://www.vimeo.com/user5301012">
+          <div data-picture data-alt="Maform on Vimeo">
+            <div data-src="img/vimeo.png"></div>
+            <div data-src="img/vimeo@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+            <noscript>
+              <?php echo $this->Html->image('vimeo.png', array('alt' => 'Vimeo')); ?>
+            </noscript>
+          </div>
+          <?php echo __('vimeo'); ?>
+        </a>
+      </li>
     </ul>
     <p id="copy">
       Webdesign by <a href="http://www.pixelephant.hu">Pixelephant Media</a>
