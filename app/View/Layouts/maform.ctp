@@ -16,9 +16,8 @@
     $url = explode("/", $this->here);
     unset($url[0]);
     unset($url[1]);
-    unset($url[2]);
     $other_url = implode("/", $url);
-    $current_page = $url[3];
+    $current_page = $url[2];
   ?>
 
   <!-- Use the .htaccess and remove these lines to avoid edge case issues.
