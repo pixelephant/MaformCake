@@ -1,4 +1,5 @@
 <?php $this->layout = 'maform'; ?>
+<?php $lang = CakeSession::read('Config.language'); ?>
 <?php 
   $this->start('home-slider');
 ?>
@@ -35,7 +36,7 @@
 </section>
 
 <div id="cta" class="clearfix">
-  <a href=""><?php echo __('Our method'); ?></a>
-  <a class="most" href=""><b><?php echo __('Works'); ?></b></a>
-  <a href=""><?php echo __('Hire us'); ?></a>
+  <a href="/<?php echo $lang ?>/method"><?php echo __('Our method'); ?></a>
+  <a class="most" href="/<?php echo $lang ?>/portfolio"><b><?php echo __('Works'); ?></b></a>
+  <a href="/<?php echo $lang ?>/hireus"><?php echo __('Hire us'); ?></a>
 </div>

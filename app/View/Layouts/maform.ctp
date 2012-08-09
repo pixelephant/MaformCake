@@ -70,7 +70,7 @@
     <?php echo $this->fetch('content'); ?>
   </section>
   <footer>
-   <p><?php echo __('contact', '<a href="mailto:info@maform.hu">info@maform.hu</a>', '<a href="tel:+36307472416">+36-30-747-2416</a>'); ?></p>
+   <p><?php echo __('contact_email', '<a href="mailto:info@maform.hu">info@maform.hu</a>', '<a href="tel:+36307472416">+36-30-747-2416</a>'); ?></p>
     <ul>
       <li><a href="http://www.facebook.com/maformdesign"><?php echo $this->Html->image('facebook.png', array('alt' => 'Facebook')); ?> <?php echo __('facebook'); ?></a></li>
       <li><a href="http://www.be.net/maform"><?php echo $this->Html->image('behance.png', array('alt' => 'Behance')); ?> <?php echo __('behance'); ?></a></li>

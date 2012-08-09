@@ -1,4 +1,5 @@
 <?php $this->layout = 'maform'; ?>
+<?php $lang = CakeSession::read('Config.language'); ?>
 <hgroup>
   <h1><?php echo __('hireus_title_first_line'); ?></h1>
   <h2><?php echo __('hireus_title_second_line'); ?></h2>
@@ -35,7 +36,7 @@
 </section>
 
 <div id="cta" class="clearfix">
-  <a href=""><?php echo __('Who we are'); ?></a>
-  <a class="most" href=""><b><?php echo __('Works'); ?></b></a>
-  <a href=""><?php echo __('Hire us'); ?></a>
+  <a href="/<?php echo $lang ?>"><?php echo __('About'); ?></a>
+  <a class="most" href="/<?php echo $lang ?>/portfolio"><b><?php echo __('Works'); ?></b></a>
+  <a href="/<?php echo $lang ?>/method"><?php echo __('Our method'); ?></a>
 </div>

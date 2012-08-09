@@ -92,7 +92,7 @@ msgstr "Read from us on Tumblr"
 msgid "vimeo"
 msgstr "Watch us on Vimeo"
 
-msgid "contact"
+msgid "contact_email"
 msgstr "Contact us at %s or at %s"
 
 msgid "Hire us"
