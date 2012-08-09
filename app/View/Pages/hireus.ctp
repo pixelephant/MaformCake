@@ -36,7 +36,7 @@
 </section>
 
 <div id="cta" class="clearfix">
-  <a href="<?php echo $this->webroot; ?>/<?php echo $lang ?>"><?php echo __('About'); ?></a>
-  <a class="most" href="<?php echo $this->webroot; ?>/<?php echo $lang ?>/portfolio"><b><?php echo __('Works'); ?></b></a>
-  <a href="<?php echo $this->webroot; ?>/<?php echo $lang ?>/method"><?php echo __('Our method'); ?></a>
+  <a href="<?php echo $this->webroot; ?><?php echo $lang ?>"><?php echo __('About'); ?></a>
+  <a class="most" href="<?php echo $this->webroot; ?><?php echo $lang ?>/portfolio"><b><?php echo __('Works'); ?></b></a>
+  <a href="<?php echo $this->webroot; ?><?php echo $lang ?>/method"><?php echo __('Our method'); ?></a>
 </div>
