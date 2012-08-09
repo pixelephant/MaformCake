@@ -85,8 +85,8 @@
       <li>
         <a href="http://www.facebook.com/maformdesign">
           <div data-picture data-alt="Maform on Facebook">
-            <div data-src="<?php echo $this->webroot; ?>/img/facebook.png"></div>
-            <div data-src="<?php echo $this->webroot; ?>/img/facebook@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+            <div data-src="<?php echo $this->webroot; ?>img/facebook.png"></div>
+            <div data-src="<?php echo $this->webroot; ?>img/facebook@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
             <noscript>
               <?php echo $this->Html->image('facebook.png', array('alt' => 'Facebook')); ?> 
             </noscript>
@@ -97,8 +97,8 @@
       <li>
         <a href="http://www.be.net/maform">
           <div data-picture data-alt="Maform on Behance">
-            <div data-src="<?php echo $this->webroot; ?>/img/behance.png"></div>
-            <div data-src="<?php echo $this->webroot; ?>/img/behance@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+            <div data-src="<?php echo $this->webroot; ?>img/behance.png"></div>
+            <div data-src="<?php echo $this->webroot; ?>img/behance@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
             <noscript>
               <?php echo $this->Html->image('behance.png', array('alt' => 'Behance')); ?>
             </noscript>
@@ -109,8 +109,8 @@
       <li>
         <a href="http://www.maform.tumblr.com">
           <div data-picture data-alt="Maform on Tumblr">
-            <div data-src="<?php echo $this->webroot; ?>/img/tumblr.png"></div>
-            <div data-src="<?php echo $this->webroot; ?>/img/tumblr@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+            <div data-src="<?php echo $this->webroot; ?>img/tumblr.png"></div>
+            <div data-src="<?php echo $this->webroot; ?>img/tumblr@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
             <noscript>
               <?php echo $this->Html->image('tumblr.png', array('alt' => 'Tumblr')); ?>
             </noscript>
@@ -121,8 +121,8 @@
       <li>
         <a href="http://www.vimeo.com/user5301012">
           <div data-picture data-alt="Maform on Vimeo">
-            <div data-src="<?php echo $this->webroot; ?>/img/vimeo.png"></div>
-            <div data-src="<?php echo $this->webroot; ?>/img/vimeo@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+            <div data-src="<?php echo $this->webroot; ?>img/vimeo.png"></div>
+            <div data-src="<?php echo $this->webroot; ?>img/vimeo@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
             <noscript>
               <?php echo $this->Html->image('vimeo.png', array('alt' => 'Vimeo')); ?>
             </noscript>
