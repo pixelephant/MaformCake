@@ -153,12 +153,12 @@ msgstr "Present"
 msgid "present_text"
 msgstr "Eye-popping renders and illustrations with style. This is how we communicate our designs."
 
-#: Enjoy
-msgid "enjoy_title"
-msgstr "Enjoy"
+#: Feedback
+msgid "feedback_title"
+msgstr "Feedback"
 
-msgid "enjoy_text"
-msgstr "The product is finished."
+msgid "feedback_text"
+msgstr "We don't forget about our projects after we are finished - we keep our eyes on our designs and we use this information for our and our clients' advancement."
 
 # Hire us
 

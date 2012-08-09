@@ -31,9 +31,9 @@
     <p><?php echo __('present_text'); ?></p>
 </div>
 <div class="step">
-    <?php echo $this->Html->image('enjoy.png', array('alt' => 'Enjoy')); ?>
-    <h3><?php echo __('enjoy_title'); ?></h3>
-    <p><?php echo __('enjoy_text'); ?></p>
+    <?php echo $this->Html->image('feedback.png', array('alt' => 'Enjoy')); ?>
+    <h3><?php echo __('feedback_title'); ?></h3>
+    <p><?php echo __('feedback_text'); ?></p>
 </div>
 </section>
 
