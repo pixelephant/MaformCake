@@ -67,6 +67,17 @@ msgstr ""
 msgid "List %s"
 msgstr ""
 
+#Menu
+
+msgid "menu_method"
+msgstr "Method"
+
+msgid "menu_portfolio"
+msgstr "Works"
+
+msgid "menu_hireus"
+msgstr "Hire us"
+
 #Footer
 
 msgid "facebook"
@@ -84,10 +95,20 @@ msgstr "Watch us on Vimeo"
 msgid "contact"
 msgstr "Contact us at %s or at %s"
 
-#Portfolio
-#: View/Pages/portfolio.ctp
 msgid "Hire us"
 msgstr "Dolgozz velünk"
+
+msgid "About"
+msgstr "Rólunk"
+
+msgid "Works"
+msgstr "Munkáink"
+
+msgid "Our method"
+msgstr "Our method"
+
+#Portfolio
+#: View/Pages/portfolio.ctp
 
 #Method
 #Title
@@ -97,22 +118,16 @@ msgstr "Our method"
 msgid "method_title_second_line"
 msgstr "of design"
 
-msgid "About"
-msgstr "Rólunk"
-
-msgid "Works"
-msgstr "Munkáink"
-
 #: Discuss
 msgid "discuss_title"
-msgstr "Megbeszélés"
+msgstr "Discuss"
 
 msgid "discuss_text"
 msgstr "We get to know You and the design problem to work out the goals together."
 
 #: Research
 msgid "research_title"
-msgstr "Kutatás"
+msgstr "Research"
 
 msgid "research_text"
 msgstr "We observe, define, describe, analyze, and methodize the design problem, the encompassing systems and the related processes."
@@ -133,14 +148,14 @@ msgstr "Applying our ideas to a real-world functional and usable product. We kee
 
 #: Present
 msgid "present_title"
-msgstr "Bemutatás"
+msgstr "Present"
 
 msgid "present_text"
 msgstr "Eye-popping renders and illustrations with style. This is how we communicate our designs."
 
 #: Enjoy
 msgid "enjoy_title"
-msgstr "Élvezet :)"
+msgstr "Enjoy"
 
 msgid "enjoy_text"
 msgstr "The product is finished."
@@ -183,3 +198,15 @@ msgstr "Industrial designers &trade;"
 
 msgid "home_title_second_line"
 msgstr "We are"
+
+msgid "peti_name"
+msgstr "Péter Molnár"
+
+msgid "peti_paragraphs"
+msgstr "During a presonal meeting we get to know you and the design problem. We define the goals and other shit like budget and milestones."
+
+msgid "geza_name"
+msgstr "Géza Csire"
+
+msgid "geza_paragraphs"
+msgstr "Géza loves transformable, moving or collapsible objects. He is always trying to extend the boundaries."

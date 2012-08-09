@@ -23,19 +23,19 @@
   <div class="member" id="peti">
     <a href="#" class="cv">CV</a>
     <img src="img/peti.png" alt="">
-    <h3>Péter Molnár</h3>
-    <p>During a presonal meeting we get to know you and the design problem. We define the goals and other shit like budget and milestones.</p>
+    <h3><?php echo __('peti_name'); ?></h3>
+    <p><?php echo __('peti_paragraphs'); ?></p>
   </div>
   <div class="member" id="geza">
     <a href="#" class="cv">CV</a>
     <img src="img/geza.png" alt="">
-    <h3>Géza Csire</h3>
-    <p>During a presonal meeting we get to know you and the design problem. We define the goals and other shit like budget and milestones.</p>
+    <h3><?php echo __('geza_name'); ?></h3>
+    <p><?php echo __('geza_paragraphs'); ?></p>
 </div>
 </section>
 
 <div id="cta" class="clearfix">
-  <a href="">Our Method</a>
-  <a class="most" href=""><b>Works</b></a>
-  <a href="">Hire us</a>
+  <a href=""><?php echo __('Our method'); ?></a>
+  <a class="most" href=""><b><?php echo __('Works'); ?></b></a>
+  <a href=""><?php echo __('Hire us'); ?></a>
 </div>

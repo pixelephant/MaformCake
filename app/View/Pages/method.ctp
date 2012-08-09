@@ -5,32 +5,32 @@
 </hgroup>
 <section id="steps">
   <div class="step">
-    <img src="img/discuss.png" alt="">
+    <?php echo $this->Html->image('discuss.png', array('alt' => 'Discuss')); ?>
     <h3><?php echo __('discuss_title'); ?></h3>
     <p><?php echo __('discuss_text'); ?></p>
   </div>
   <div class="step">
-    <img src="img/research.png" alt="">
+    <?php echo $this->Html->image('research.png', array('alt' => 'Research')); ?>
     <h3><?php echo __('research_title'); ?></h3>
     <p><?php echo __('research_text'); ?></p>
 </div>
 <div class="step">
-    <img src="img/design.png" alt="">
+    <?php echo $this->Html->image('design.png', array('alt' => 'Design')); ?>
     <h3><?php echo __('design_title'); ?></h3>
     <p><?php echo __('design_text'); ?></p>
 </div>
 <div class="step">
-    <img src="img/implement.png" alt="">
+    <?php echo $this->Html->image('implement.png', array('alt' => 'Implement')); ?>
     <h3><?php echo __('implement_title'); ?></h3>
     <p><?php echo __('implement_text'); ?></p>
 </div>
 <div class="step">
-    <img src="img/present.png" alt="">
+    <?php echo $this->Html->image('present.png', array('alt' => 'Present')); ?>
     <h3><?php echo __('present_title'); ?></h3>
     <p><?php echo __('present_text'); ?></p>
 </div>
 <div class="step">
-    <img src="img/enjoy.png" alt="">
+    <?php echo $this->Html->image('enjoy.png', array('alt' => 'Enjoy')); ?>
     <h3><?php echo __('enjoy_title'); ?></h3>
     <p><?php echo __('enjoy_text'); ?></p>
 </div>

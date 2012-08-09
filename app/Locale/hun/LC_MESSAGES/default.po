@@ -67,6 +67,17 @@ msgstr ""
 msgid "List %s"
 msgstr ""
 
+#Menu
+
+msgid "menu_method"
+msgstr "Módszer"
+
+msgid "menu_portfolio"
+msgstr "Munkák"
+
+msgid "menu_hireus"
+msgstr "Kapcsolat"
+
 #Footer
 
 msgid "facebook"
@@ -84,66 +95,70 @@ msgstr "Watch us on Vimeo"
 msgid "contact"
 msgstr "Contact us at %s or at %s"
 
-#Portfolio
-#: View/Pages/portfolio.ctp
-msgid "Hire us"
-msgstr "Dolgozz velünk"
-
-#Method
-#Title
-msgid "method_title_first_line"
-msgstr "Our method"
-
-msgid "method_title_second_line"
-msgstr "of design"
-
 msgid "About"
 msgstr "Rólunk"
 
 msgid "Works"
 msgstr "Munkáink"
 
+msgid "Hire us"
+msgstr "Dolgozz velünk"
+
+msgid "Our method"
+msgstr "Our method"
+
+#Portfolio
+#: View/Pages/portfolio.ctp
+
+#Method
+#Title
+msgid "method_title_first_line"
+msgstr "Módszertanunk"
+
+msgid "method_title_second_line"
+msgstr "amit a tervezés során alkalmazunk"
+
 #: Discuss
 msgid "discuss_title"
-msgstr "Megbeszélés"
+msgstr "Eszmecsere"
 
 msgid "discuss_text"
-msgstr "We get to know You and the design problem to work out the goals together."
+msgstr "Megismerkedünk Veletek és a tervezési feladattal, majd közösen pontosítjuk a célokat."
 
 #: Research
 msgid "research_title"
 msgstr "Kutatás"
 
 msgid "research_text"
-msgstr "We observe, define, describe, analyze, and methodize the design problem, the encompassing systems and the related processes."
+msgstr "Megfigyeljük, meghatározzuk, leírjuk, elemezzük és rendszerezzük a a feladathoz kapcsolódó problémákat, a környezeti tényezőket és a befoglaló rendszereket."
 
 #: Design
 msgid "design_title"
-msgstr "Design"
+msgstr "Alkotás"
 
 msgid "design_text"
-msgstr "This is the part where we let our minds go. Where our intuition helps us to come up with useful and creative solutions."
+msgstr "Elengedjük a fantáziánkat, hogy megtaláljuk a lehető legtöbb hasznos és újszerű megoldást a feladatra."
 
 #: Implement
 msgid "implement_title"
-msgstr "Implement"
+msgstr "Alkalmazás"
 
 msgid "implement_text"
-msgstr "Applying our ideas to a real-world functional and usable product. We keep it simple to save valuable resources."
+msgstr "Alkalmazzuk az ötleteinket egy valós környezetben is működő tervben. Egyszerűségre törekszünk, amivel értékes erőforrásokat takarítunk meg."
 
 #: Present
 msgid "present_title"
-msgstr "Bemutatás"
+msgstr "Prezentáció"
 
 msgid "present_text"
-msgstr "Eye-popping renders and illustrations with style. This is how we communicate our designs."
+msgstr "Valósághű és stílusos illusztrációk segítenek bemutatni és kommunikálni a terveinket."
 
 #: Enjoy
 msgid "enjoy_title"
 msgstr "Élvezet :)"
 
 msgid "enjoy_text"
-msgstr "The product is finished."
+msgstr "Elmegyünk"
 
 # Hire us
 
@@ -179,7 +194,19 @@ msgstr "Küldés"
 
 #Home
 msgid "home_title_first_line"
-msgstr "Industrial designers &trade;"
+msgstr "ipari formatervezők &trade;"
 
 msgid "home_title_second_line"
-msgstr "We are"
+msgstr "vagyunk"
+
+msgid "peti_name"
+msgstr "Molnár L. Péter"
+
+msgid "peti_paragraphs"
+msgstr "Péter egy elemző tervező, aki mindig rendszerben gondolkozik. Munkájában a tökéletességre törekszik."
+
+msgid "geza_name"
+msgstr "Csire Géza"
+
+msgid "geza_paragraphs"
+msgstr "Géza imádja az átalakuló, mozgó és összecsukható dolgokat. Mindig az új lehetőségek felkutatására törekszik."
