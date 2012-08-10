@@ -16,14 +16,14 @@
 <section id="project">
   <?php echo $this->Html->retinaImage($portfolio['Portfolio']['large_image'],'img/portfolio/' . $portfolio['Portfolio']['slug'] . '/','Award winning project'); ?>
   <div class="text">
-    <?php foreach($portfolio['PortfolioItemText'] as $text): ?>
+    <?php foreach($portfolio_texts as $text): ?>
       <h3><?php echo $text['title']; ?></h3>
       <p><?php echo $text['paragraphs']; ?></p>
     <?php endforeach; ?>
   </div>
 
   <figure>
-    <?php foreach($portfolio['PortfolioItemImage'] as $image): ?>
+    <?php foreach($portfolio_images as $image): ?>
       <?php echo $this->Html->retinaImage($image['image_file'],'img/portfolio/' . $portfolio['Portfolio']['slug'] . '/',$portfolio['Portfolio']['name']); ?>
       <p><?php echo $image['paragraphs']; ?></p>
     <?php endforeach; ?>

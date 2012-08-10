@@ -2,7 +2,7 @@
 
 	class PagesController extends AppController {
 
-		var $uses = array('Portfolio');
+		var $uses = array('Portfolio','PortfolioItemText','PortfolioItemImage');
 
 		public function display() {
 			$path = func_get_args();
@@ -20,7 +20,12 @@
 			$path = func_get_args();
 
 			$portfolio = $this->Portfolio->findBySlug($path[0]);
+			$portfolio_texts = $this->PortfolioItemText->find('all');
+			$portfolio_images = $this->PortfolioItemImage->findByPortfolioId($portfolio['Portfolio']['id']);
+			
 			$this->set('portfolio', $portfolio);
+			$this->set('portfolio_texts', $portfolio_texts);
+			$this->set('portfolio_images', $portfolio_images);
 
 			$this->render('portfolio_item');
 		}
