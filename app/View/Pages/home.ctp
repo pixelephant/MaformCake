@@ -50,7 +50,7 @@
 </hgroup>
 <section id="members">
   <div class="member" id="peti">
-    <a href="#" class="cv">CV</a>
+    <?php echo $this->Html->link('CV', '/doc/peti_cv.pdf', array('class' => 'cv')); ?>
     <div data-picture data-alt="Molnár Péter">
       <div data-src="<?php echo $this->webroot; ?>img/peti.png"></div>
       <div data-src="<?php echo $this->webroot; ?>img/peti@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
@@ -62,7 +62,7 @@
     <p><?php echo __('peti_paragraphs'); ?></p>
   </div>
   <div class="member" id="geza">
-    <a href="#" class="cv">CV</a>
+    <?php echo $this->Html->link('CV', '/doc/geza_cv.pdf', array('class' => 'cv')); ?>
     <div data-picture data-alt="Csire Géza">
       <div data-src="<?php echo $this->webroot; ?>img/geza.png"></div>
       <div data-src="<?php echo $this->webroot; ?>img/geza@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
