@@ -9,8 +9,11 @@
   <?php foreach($portfolio_items as $item): ?>
 
     <div class="element">
-      <a href="<?php echo $this->webroot; ?>portfolio/<?php echo $item['Portfolio']['slug']; ?>">
-        <?php echo $this->Html->image($item['Portfolio']['list_image'], array('alt' => $item['Portfolio']['name'])); ?>
+      <a href="<?php echo $this->webroot; ?><?php echo $lang ?>/portfolio/<?php echo $item['Portfolio']['slug']; ?>">
+        <span class="badge">
+          <?php echo $this->Html->retinaImage('badge.png','img/','Award winning project'); ?>
+        </span>
+        <?php echo $this->Html->retinaImage($item['Portfolio']['list_image'],'img/portfolio/' . $item['Portfolio']['slug'] . '/',$item['Portfolio']['name']); ?>
         <div class="data">
           <h3><?php echo $item['Portfolio']['name']; ?></h3>
           <p><?php echo $item['Portfolio']['description']; ?></p>

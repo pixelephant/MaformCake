@@ -31,4 +31,24 @@ App::uses('Helper', 'View');
  * @package       app.View.Helper
  */
 class AppHelper extends Helper {
+
+	public function retinaImage($file, $dir='img/', $alt=''){
+
+		$f = explode(".",$file);
+
+		$e = $f[count($f)-1];
+		unset($f[count($f)-1]);
+		$f = implode(".",$f);
+
+		$dir = $this->webroot . $dir;
+
+		return '<div data-picture data-alt="' . $alt . '">
+			      <div data-src="' . $dir . $f . '.' . $e . '"></div>
+			      <div data-src="' . $dir . $f . '@2x.' . $e . '" data-media="(min-device-pixel-ratio: 2.0)"></div>
+			      <noscript>
+			        <img src="' . $dir . $f . '.' . $e . '" alt="' . $alt . '">
+			      </noscript>
+			    </div>';
+	}
+
 }
