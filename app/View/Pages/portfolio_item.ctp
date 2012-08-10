@@ -1,13 +1,14 @@
 <?php $this->layout = 'maform'; ?>
+<?php $lang = CakeSession::read('Config.language'); ?>
 
 <hgroup>
   <h1><?php echo $portfolio['Portfolio']['name']; ?></h1>
   <h2><?php echo $portfolio['Portfolio']['description']; ?></h2>
 </hgroup>
 <p id="portfolio-nav">
-  <a class="prev" href="#"> <span aria-hidden="true">&laquo;</span> Previous</a>
+  <a class="prev" href="<?php echo $this->webroot; ?><?php echo $lang; ?>/portfolio/<?php echo $prev_item[0]['portfolios']['slug']; ?>"> <span aria-hidden="true">&laquo;</span> Previous</a>
   <a href="#" class="all"><?php echo $portfolio['Portfolio']['name']; ?></a>
-  <a class="next" href="#">Next <span aria-hidden="true">&raquo;</span></a>
+  <a class="next" href="<?php echo $this->webroot; ?><?php echo $lang; ?>/portfolio/<?php echo $next_item[0]['portfolios']['slug']; ?>">Next <span aria-hidden="true">&raquo;</span></a>
 </p>
 <p id="data">
   <?php echo $portfolio['Portfolio']['data']; ?>

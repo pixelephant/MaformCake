@@ -110,6 +110,12 @@ msgstr "Így dolgozunk"
 #Portfolio
 #: View/Pages/portfolio.ctp
 
+msgid "portfolio_title_first_line"
+msgstr "Munkák"
+
+msgid "portfolio_title_second_line"
+msgstr "amikre büszkék vagyunk"
+
 #Method
 #Title
 msgid "method_title_first_line"

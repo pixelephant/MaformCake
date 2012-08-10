@@ -1,8 +1,10 @@
 <?php $this->layout = 'maform'; ?>
 <?php $lang = CakeSession::read('Config.language'); ?>
+
+<?php print_r($portfolio_items); ?>
 <hgroup>
-  <h1>Works</h1>
-  <h2>We are proud of</h2>
+  <h1><?php echo __('portfolio_title_first_line') ?></h1>
+  <h2><?php echo __('portfolio_title_second_line') ?></h2>
 </hgroup>
 
 <section id="portfolio">

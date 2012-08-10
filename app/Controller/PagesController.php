@@ -8,7 +8,7 @@
 			$path = func_get_args();
 
 			if($path[0] == 'portfolio'){
-				$portfolio_items = $this->Portfolio->find('all');
+				$portfolio_items = $this->Portfolio->find('all', array('recursive' => -1));
 				$this->set('portfolio_items', $portfolio_items);
 			}
 
@@ -23,9 +23,22 @@
 			$portfolio_texts = $this->PortfolioItemText->findAllByPortfolioId($portfolio['Portfolio']['id']);
 			$portfolio_images = $this->PortfolioItemImage->findAllByPortfolioId($portfolio['Portfolio']['id']);
 			
+			$prev_item = $this->Portfolio->query("SELECT * FROM portfolios WHERE id < " . $portfolio['Portfolio']['id'] . " ORDER BY ID DESC LIMIT 1");
+			$next_item = $this->Portfolio->query("SELECT * FROM portfolios WHERE id > " . $portfolio['Portfolio']['id'] . " ORDER BY ID ASC LIMIT 1");
+
+			if(empty($prev_item)){
+				$prev_item = $this->Portfolio->query("SELECT * FROM portfolios ORDER BY ID DESC LIMIT 1");
+			}
+
+			if(empty($next_item)){
+				$next_item = $this->Portfolio->query("SELECT * FROM portfolios ORDER BY ID ASC LIMIT 1");
+			}
+
 			$this->set('portfolio', $portfolio);
 			$this->set('portfolio_texts', $portfolio_texts);
 			$this->set('portfolio_images', $portfolio_images);
+			$this->set('prev_item', $prev_item);
+			$this->set('next_item', $next_item);
 
 			$this->render('portfolio_item');
 		}

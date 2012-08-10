@@ -110,6 +110,12 @@ msgstr "Our method"
 #Portfolio
 #: View/Pages/portfolio.ctp
 
+msgid "portfolio_title_first_line"
+msgstr "Works"
+
+msgid "portfolio_title_second_line"
+msgstr "we are proud of"
+
 #Method
 #Title
 msgid "method_title_first_line"
