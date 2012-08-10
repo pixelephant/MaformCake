@@ -51,25 +51,13 @@
 <section id="members">
   <div class="member" id="peti">
     <?php echo $this->Html->link('CV', '/doc/peti_cv.pdf', array('class' => 'cv')); ?>
-    <div data-picture data-alt="Molnár Péter">
-      <div data-src="<?php echo $this->webroot; ?>img/peti.png"></div>
-      <div data-src="<?php echo $this->webroot; ?>img/peti@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
-      <noscript>
-        <img src="<?php echo $this->webroot; ?>img/peti.png" alt="Molnár Péter">
-      </noscript>
-    </div>
+    <?php echo $this->Html->retinaImage('peti.png','img/',__('peti_name')); ?>
     <h3><?php echo __('peti_name'); ?></h3>
     <p><?php echo __('peti_paragraphs'); ?></p>
   </div>
   <div class="member" id="geza">
     <?php echo $this->Html->link('CV', '/doc/geza_cv.pdf', array('class' => 'cv')); ?>
-    <div data-picture data-alt="Csire Géza">
-      <div data-src="<?php echo $this->webroot; ?>img/geza.png"></div>
-      <div data-src="<?php echo $this->webroot; ?>img/geza@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
-      <noscript>
-        <img src="<?php echo $this->webroot; ?>img/geza.png" alt="Csire Géza">
-      </noscript>
-    </div>
+    <?php echo $this->Html->retinaImage('geza.png','img/',__('geza_name')); ?>
     <h3><?php echo __('geza_name'); ?></h3>
     <p><?php echo __('geza_paragraphs'); ?></p>
 </div>

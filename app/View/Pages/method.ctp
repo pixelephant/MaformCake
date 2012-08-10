@@ -6,32 +6,32 @@
 </hgroup>
 <section id="steps">
   <div class="step">
-    <?php echo $this->Html->image('discuss.png', array('alt' => 'Discuss')); ?>
+    <?php echo $this->Html->retinaImage('discuss.png','img/','Discuss'); ?>
     <h3><?php echo __('discuss_title'); ?></h3>
     <p><?php echo __('discuss_text'); ?></p>
   </div>
   <div class="step">
-    <?php echo $this->Html->image('research.png', array('alt' => 'Research')); ?>
+    <?php echo $this->Html->retinaImage('research.png','img/','Research'); ?>
     <h3><?php echo __('research_title'); ?></h3>
     <p><?php echo __('research_text'); ?></p>
 </div>
 <div class="step">
-    <?php echo $this->Html->image('design.png', array('alt' => 'Design')); ?>
+    <?php echo $this->Html->retinaImage('design.png','img/','Design'); ?>
     <h3><?php echo __('design_title'); ?></h3>
     <p><?php echo __('design_text'); ?></p>
 </div>
 <div class="step">
-    <?php echo $this->Html->image('implement.png', array('alt' => 'Implement')); ?>
+    <?php echo $this->Html->retinaImage('implement.png','img/','Implement'); ?>
     <h3><?php echo __('implement_title'); ?></h3>
     <p><?php echo __('implement_text'); ?></p>
 </div>
 <div class="step">
-    <?php echo $this->Html->image('present.png', array('alt' => 'Present')); ?>
+    <?php echo $this->Html->retinaImage('present.png','img/','Present'); ?>
     <h3><?php echo __('present_title'); ?></h3>
     <p><?php echo __('present_text'); ?></p>
 </div>
 <div class="step">
-    <?php echo $this->Html->image('feedback.png', array('alt' => 'Enjoy')); ?>
+    <?php echo $this->Html->retinaImage('feedback.png','img/','Feedback'); ?>
     <h3><?php echo __('feedback_title'); ?></h3>
     <p><?php echo __('feedback_text'); ?></p>
 </div>

@@ -20,8 +20,8 @@
 			$path = func_get_args();
 
 			$portfolio = $this->Portfolio->findBySlug($path[0]);
-			$portfolio_texts = $this->PortfolioItemText->find('all');
-			$portfolio_images = $this->PortfolioItemImage->findByPortfolioId($portfolio['Portfolio']['id']);
+			$portfolio_texts = $this->PortfolioItemText->findAllByPortfolioId($portfolio['Portfolio']['id']);
+			$portfolio_images = $this->PortfolioItemImage->findAllByPortfolioId($portfolio['Portfolio']['id']);
 			
 			$this->set('portfolio', $portfolio);
 			$this->set('portfolio_texts', $portfolio_texts);
