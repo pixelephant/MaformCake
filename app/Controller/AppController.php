@@ -34,6 +34,7 @@ App::uses('CakeEmail', 'Network/Email');
  */
 class AppController extends Controller {
 	 public function beforeFilter(){
+	 	
 	 	if(isset($this->params->lang)){
 	 		CakeSession::write('Config.language', $this->params->lang);
 	 		Configure::write('Config.language', $this->params->lang);

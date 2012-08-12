@@ -178,25 +178,25 @@ msgid "hireus_title_second_line"
 msgstr "let's create something cool together!"
 
 msgid "offer"
-msgstr "árajánlat"
+msgstr "offer"
 
 msgid "contact"
-msgstr "kapcsolat"
+msgstr "contact"
 
 msgid "form_name"
-msgstr "Ön neve / Cégnév"
+msgstr "Your name / Company name"
 
 msgid "form_email"
-msgstr "Ön email címe"
+msgstr "Your email address"
 
 msgid "form_budget"
-msgstr "Keret"
+msgstr "Budget"
 
 msgid "form_description"
 msgstr "Description of work"
 
 msgid "form_send"
-msgstr "Küldés"
+msgstr "Send"
 
 #Home
 msgid "home_title_first_line"

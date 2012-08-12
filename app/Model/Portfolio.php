@@ -18,8 +18,6 @@ class Portfolio extends AppModel {
         )
     );
 
-    public $locale = 'hun';
-
     public $translateModel = 'PortfolioTranslation';
 
 	public $validate = array(
