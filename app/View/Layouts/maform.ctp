@@ -17,7 +17,12 @@
     unset($url[0]);
     unset($url[1]);
     $other_url = implode("/", $url);
-    $current_page = $url[2];
+    if(isset($url[2])){
+      $current_page = $url[2];  
+    }else{
+      $current_page = '';
+    }
+    
   ?>
 
   <!-- Use the .htaccess and remove these lines to avoid edge case issues.
