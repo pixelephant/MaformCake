@@ -94,4 +94,17 @@ endforeach;
 		}
 ?>
 	</ul>
+
+	<?php
+		echo CakeSession::read('Config.language');
+	?>
+
+	<form action="/cakephp/admin/lang" method="POST">
+		<select name="lang" id="lang">
+			<option value="hun">Magyar</option>
+			<option value="eng">English</option>
+		</select>
+		<button type="submit">Change lang</button>
+	</form>
+
 </div>

@@ -98,6 +98,10 @@
  */
 Cache::config('default', array('engine' => 'File'));
 
+CakePlugin::load('Uploader');
+App::import('Vendor', 'Uploader.Uploader');
+	 
+
 /**
  * The settings below can be used to set additional paths to models, views and controllers.
  *

@@ -38,5 +38,21 @@ class Portfolio extends AppModel {
         )
     );
 
+    public function afterSave($created) {
+        if($created){
+            $id = $this->getInsertID();
+
+            if(CakeSession::read('Config.language') == 'eng'){
+                $lang = 'hun';
+            }else{
+                $lang = 'eng';
+            }
+            
+            $this->query("INSERT INTO portfolio_translations (locale, model, foreign_key, field, content) VALUES ('" . $lang . "', 'Portfolio', " . $id . ", 'data', '');");
+            $this->query("INSERT INTO portfolio_translations (locale, model, foreign_key, field, content) VALUES ('" . $lang . "', 'Portfolio', " . $id . ", 'description', '');");
+        }
+        return true;
+    }
+
 }
 ?>

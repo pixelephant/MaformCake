@@ -28,6 +28,10 @@
 	// Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
 
 	Router::redirect('/', '/hu');
+	Router::redirect('/admin', '/admin/portfolios');
+	
+	Router::connect('/admin/lang', array('controller' => 'admin', 'action' => 'lang'));
+	Router::connect('/admin/file', array('controller' => 'admin', 'action' => 'file_upload_form'));
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
