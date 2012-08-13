@@ -25,10 +25,12 @@
     <?php endforeach; ?>
 
 
-  <figure>
+
     <?php foreach($portfolio_images as $image): ?>
-      <?php echo $this->Html->retinaImage($image['PortfolioItemImage']['image_file'],'img/portfolio/' . $portfolio['Portfolio']['slug'] . '/',$portfolio['Portfolio']['name']); ?>
-      <p><?php echo $image['PortfolioItemImage']['paragraphs']; ?></p>
+      <figure>
+        <?php echo $this->Html->retinaImage($image['PortfolioItemImage']['image_file'],'img/portfolio/' . $portfolio['Portfolio']['slug'] . '/',$portfolio['Portfolio']['name']); ?>
+        <p><?php echo $image['PortfolioItemImage']['paragraphs']; ?></p>
+      </figure>
     <?php endforeach; ?>
-  </figure>
+
 </section>
