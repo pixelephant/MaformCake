@@ -40,14 +40,5 @@ class AppController extends Controller {
 	 	// 	CakeSession::write('Config.language', $this->params->lang);
 	 	// 	Configure::write('Config.language', $this->params->lang);
 	 	// }
-	 	
-	 	if($this->params->lang == 'en'){
-	 		CakeSession::write('Config.language', 'en');
-	 		Configure::write('Config.language', 'en');
-	 	}else{
-	 		CakeSession::write('Config.language', 'hu');
-	 		Configure::write('Config.language', 'hu');
-	 	}
-
 	 }
 }
