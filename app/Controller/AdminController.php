@@ -35,7 +35,7 @@
 			CakeSession::write('Config.language', $_POST['lang']);
 	 		Configure::write('Config.language', $_POST['lang']);
 
-	 		$this->redirect('/admin');
+	 		$this->redirect($this->referer());
 		}
 	
 	}
