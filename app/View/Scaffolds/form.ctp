@@ -21,8 +21,8 @@
 	echo $this->Form->create();
 	echo $this->Form->inputs($scaffoldFields, array('created', 'modified', 'updated'));
 	echo $this->Form->end(__d('cake', 'Submit'));
-	echo CakeSession::read('Config.language');	
 ?>
+	Current language: <b><?php echo CakeSession::read('Config.language'); ?></b>
 </div>
 <div class="actions">
 	<h3><?php echo __d('cake', 'Actions'); ?></h3>
@@ -48,5 +48,6 @@
 			}
 		}
 ?>
+	<li>Current language: <b><?php echo CakeSession::read('Config.language'); ?></b></li>
 	</ul>
 </div>

@@ -32,7 +32,7 @@
 		}
 
 		public function lang(){
-			CakeSession::write('Config.language', 'eng');
+			CakeSession::write('Config.language', $_POST['lang']);
 	 		Configure::write('Config.language', $_POST['lang']);
 
 	 		$this->redirect('/admin');
