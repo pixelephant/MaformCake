@@ -27,7 +27,7 @@
  */
 	// Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
 
-	Router::redirect('/', '/hu');
+	// Router::redirect('/', '/hu');
 	Router::redirect('/admin', '/admin/portfolios');
 	
 	Router::connect('/admin/lang', array('controller' => 'admin', 'action' => 'lang'));
@@ -36,6 +36,17 @@
  * ...and connect the rest of 'Pages' controller's urls.
  */
 	Router::connect('/email', array('controller' => 'emails', 'action' => 'send', 'method' => 'POST'));
+
+	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+
+	Router::connect('/portfolio', array('controller' => 'pages', 'action' => 'display', 'portfolio'));
+
+	Router::connect('/portfolio/*', array('controller' => 'pages', 'action' => 'portfolio_item'));
+
+	Router::connect('/method', array('controller' => 'pages', 'action' => 'display', 'method'));
+	Router::connect('/hireus', array('controller' => 'pages', 'action' => 'display', 'hireus'));
+
+	/* Nyelvek */
 
 	Router::connect('/:lang', array('controller' => 'pages', 'action' => 'display', 'home'), array('persist' => array('lang')));
 

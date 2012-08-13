@@ -15,14 +15,23 @@
   <?php 
     $url = explode("/", $this->here);
     unset($url[0]);
-    unset($url[1]);
-    $other_url = implode("/", $url);
-    if(isset($url[2])){
-      $current_page = $url[2];  
+
+    if($current_lang == 'en'){
+      unset($url[1]);
+      if(isset($url[2])){
+        $current_page = $url[2];  
+      }else{
+        $current_page = '';
+      }  
     }else{
-      $current_page = '';
+      if(isset($url[1])){
+        $current_page = $url[1];  
+      }else{
+        $current_page = '';
+      }
     }
-    
+
+    $other_url = implode("/", $url);
   ?>
 
   <!-- Use the .htaccess and remove these lines to avoid edge case issues.
@@ -66,14 +75,14 @@
         </div>
       </a>
       <span id="language">
-        <?php echo $this->Html->Link('hu', "/hu/" . $other_url, array('class' => $current_lang == 'hu' ? 'active' : '')); ?> / 
+        <?php echo $this->Html->Link('hu', "/" . $other_url, array('class' => $current_lang == 'hu' ? 'active' : '')); ?> / 
         <?php echo $this->Html->Link('en', "/en/" . $other_url, array('class' => $current_lang == 'en' ? 'active' : '')); ?>
       </span>
     <nav>
       <ul>
-        <li><?php echo $this->Html->link(__('menu_method'), '/' . $current_lang . '/method', ($current_page == 'method' ? array('class' => 'active') : '')); ?></li>
-        <li><?php echo $this->Html->link(__('menu_portfolio'), '/' . $current_lang . '/portfolio', ($current_page == 'portfolio' ? array('class' => 'active') : '')); ?></li>
-        <li><?php echo $this->Html->link(__('menu_hireus'), '/' . $current_lang . '/hireus', ($current_page == 'hireus' ? array('class' => 'active') : '')); ?></li>
+        <li><?php echo $this->Html->link(__('menu_method'), ($current_lang == 'en' ? '/en' : '') . '/method', ($current_page == 'method' ? array('class' => 'active') : '')); ?></li>
+        <li><?php echo $this->Html->link(__('menu_portfolio'), ($current_lang == 'en' ? '/en' : '') . '/portfolio', ($current_page == 'portfolio' ? array('class' => 'active') : '')); ?></li>
+        <li><?php echo $this->Html->link(__('menu_hireus'), ($current_lang == 'en' ? '/en' : '') . '/hireus', ($current_page == 'hireus' ? array('class' => 'active') : '')); ?></li>
       </ul>
     </nav>
     <?php echo $this->fetch('home-slider'); ?>
