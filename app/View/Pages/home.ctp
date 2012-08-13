@@ -69,7 +69,7 @@
 </section>
 
 <div id="cta" class="clearfix">
-  <a href="<?php echo $this->webroot; ?><?php echo $lang ?>/method"><?php echo __('Our method'); ?></a>
-  <a class="most" href="<?php echo $this->webroot; ?><?php echo $lang ?>/portfolio"><b><?php echo __('Works'); ?></b></a>
-  <a href="<?php echo $this->webroot; ?><?php echo $lang ?>/hireus"><?php echo __('Hire us'); ?></a>
+  <a href="<?php echo $this->webroot; ?><?php echo ($lang == 'en' ? 'en/' : '') ?>method"><?php echo __('Our method'); ?></a>
+  <a class="most" href="<?php echo $this->webroot; ?><?php echo ($lang == 'en' ? 'en/' : '') ?>portfolio"><b><?php echo __('Works'); ?></b></a>
+  <a href="<?php echo $this->webroot; ?><?php echo ($lang == 'en' ? 'en/' : '') ?>hireus"><?php echo __('Hire us'); ?></a>
 </div>

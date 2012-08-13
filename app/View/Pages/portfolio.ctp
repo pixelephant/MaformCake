@@ -14,7 +14,7 @@
   <?php foreach($portfolio_items as $item): ?>
 
     <div class="element">
-      <a href="<?php echo $this->webroot; ?><?php echo $lang ?>/portfolio/<?php echo $item['Portfolio']['slug']; ?>">
+      <a href="<?php echo $this->webroot; ?><?php echo ($lang == 'en' ? 'en/' : '') ?>portfolio/<?php echo $item['Portfolio']['slug']; ?>">
         <?php if($item['Portfolio']['badge'] == 1){ ?>
           <span class="badge">
             <?php echo $this->Html->retinaImage('badge.png','img/','Award winning project'); ?>
@@ -33,7 +33,7 @@
 </section>
 
 <div id="cta" class="clearfix">
-  <a href="<?php echo $this->webroot; ?><?php echo $lang ?>"><?php echo __('About'); ?></a>
-  <a class="most" href="<?php echo $this->webroot; ?><?php echo $lang ?>/hireus"><b><?php echo __('Hire us'); ?></b></a>
-  <a href="<?php echo $this->webroot; ?><?php echo $lang ?>/method"><?php echo __('Our method'); ?></a>
+  <a href="<?php echo $this->webroot; ?><?php echo ($lang == 'en' ? 'en/' : '') ?>"><?php echo __('About'); ?></a>
+  <a class="most" href="<?php echo $this->webroot; ?><?php echo ($lang == 'en' ? 'en/' : '') ?>hireus"><b><?php echo __('Hire us'); ?></b></a>
+  <a href="<?php echo $this->webroot; ?><?php echo ($lang == 'en' ? 'en/' : '') ?>method"><?php echo __('Our method'); ?></a>
 </div>

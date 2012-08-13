@@ -43,7 +43,7 @@
 </section>
 
 <div id="cta" class="">
-  <a href="<?php echo $this->webroot; ?><?php echo $lang ?>"><?php echo __('About'); ?></a>
-  <a class="most" href="<?php echo $this->webroot; ?><?php echo $lang ?>/portfolio"><b><?php echo __('Works'); ?></b></a>
-  <a href="<?php echo $this->webroot; ?><?php echo $lang ?>/hireus"><?php echo __('Hire us'); ?></a>
+  <a href="<?php echo $this->webroot; ?><?php echo ($lang == 'en' ? 'en/' : '') ?>"><?php echo __('About'); ?></a>
+  <a class="most" href="<?php echo $this->webroot; ?><?php echo ($lang == 'en' ? 'en/' : '') ?>portfolio"><b><?php echo __('Works'); ?></b></a>
+  <a href="<?php echo $this->webroot; ?><?php echo ($lang == 'en' ? 'en/' : '') ?>hireus"><?php echo __('Hire us'); ?></a>
 </div>
