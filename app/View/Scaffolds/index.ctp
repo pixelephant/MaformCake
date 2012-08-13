@@ -93,6 +93,7 @@ endforeach;
 			}
 		}
 ?>
+	<li><a href="<?php echo $this->webroot; ?>admin/file">Portfolio File upload</a></li>
 	</ul>
 
 	Current language: <b><?php echo CakeSession::read('Config.language'); ?></b>

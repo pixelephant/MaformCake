@@ -16,11 +16,12 @@
 	<div class="actions">
 		<h3>Actions</h3>
 		<ul>
-			<li><a href="/admin/portfolios/add">New Portfolio</a></li>
-			<li><a href="/admin/portfolio_item_texts">List Portfolio Item Texts</a></li>
-			<li><a href="/admin/portfolio_item_texts/add">New Portfolio Item Text</a></li>
-			<li><a href="/admin/portfolio_item_images">List Portfolio Item Images</a></li>
-			<li><a href="/admin/portfolio_item_images/add">New Portfolio Item Image</a></li>
+			<li><a href="<?php echo $this->webroot; ?>admin/portfolios">List Portfolios</a></li>
+			<li><a href="<?php echo $this->webroot; ?>admin/portfolios/add">New Portfolio</a></li>
+			<li><a href="<?php echo $this->webroot; ?>admin/portfolio_item_texts">List Portfolio Item Texts</a></li>
+			<li><a href="<?php echo $this->webroot; ?>admin/portfolio_item_texts/add">New Portfolio Item Text</a></li>
+			<li><a href="<?php echo $this->webroot; ?>admin/portfolio_item_images">List Portfolio Item Images</a></li>
+			<li><a href="<?php echo $this->webroot; ?>admin/portfolio_item_images/add">New Portfolio Item Image</a></li>
 		</ul>
 	</div>
 </div>
