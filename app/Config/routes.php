@@ -27,7 +27,6 @@
  */
 	// Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
 
-	// Router::redirect('/', '/hu');
 	Router::redirect('/admin', '/admin/portfolios');
 	
 	Router::connect('/admin/lang', array('controller' => 'admin', 'action' => 'lang'));

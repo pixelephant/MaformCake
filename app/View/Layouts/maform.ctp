@@ -65,7 +65,7 @@
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <header>
-      <a id="logo" href="<?php echo $this->webroot; ?><?php echo $current_lang; ?>">
+      <a id="logo" href="<?php echo $this->webroot; ?><?php echo ($current_lang == 'en' ? 'en' : ''); ?>">
         <div data-picture data-alt="Maform logó">
           <div data-src="<?php echo $this->webroot; ?>img/logo.png"></div>
           <div data-src="<?php echo $this->webroot; ?>img/logo@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
