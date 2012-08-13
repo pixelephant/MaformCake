@@ -1,5 +1,10 @@
 <?php $this->layout = 'maform'; ?>
 <?php $lang = CakeSession::read('Config.language'); ?>
+
+<?php $this->start('title'); ?><?php echo __('home_meta_title'); ?><?php $this->end(); ?>
+<?php $this->start('description'); ?><?php echo __('home_meta_desc'); ?><?php $this->end(); ?>
+<?php $this->start('keywords'); ?><?php echo __('home_meta_keywords'); ?><?php $this->end(); ?>
+
 <?php 
   $this->start('home-slider');
 ?>

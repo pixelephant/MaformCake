@@ -28,8 +28,9 @@
   <!-- Use the .htaccess and remove these lines to avoid edge case issues.
        More info: h5bp.com/i/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Maform</title>
-  <meta name="description" content="">
+  <title><?php echo $this->fetch('title'); ?></title>
+  <?php echo $this->Html->meta('description', $this->fetch('description')); ?>
+  <?php echo $this->Html->meta('keywords', $this->fetch('keywords')); ?>
   <meta name="apple-mobile-web-app-capable" content="yes" />  
 
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
@@ -41,7 +42,6 @@
   <?php echo $this->Html->css('flexslider'); ?>
   <?php echo $this->Html->css('style'); ?>
   <?php echo $this->fetch('style'); ?>
-  <?php echo $this->fetch('meta'); ?>
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 

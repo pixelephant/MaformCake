@@ -1,5 +1,10 @@
 <?php $this->layout = 'maform'; ?>
 <?php $lang = CakeSession::read('Config.language'); ?>
+
+<?php $this->start('title'); ?><?php echo __('method_meta_title'); ?><?php $this->end(); ?>
+<?php $this->start('description'); ?><?php echo __('method_meta_desc'); ?><?php $this->end(); ?>
+<?php $this->start('keywords'); ?><?php echo __('method_meta_keywords'); ?><?php $this->end(); ?>
+
 <hgroup>
   <h1><?php echo __('method_title_first_line'); ?></h1>
   <h2><?php echo __('method_title_second_line'); ?></h2>

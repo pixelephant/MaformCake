@@ -216,3 +216,49 @@ msgstr "Csire Géza"
 
 msgid "geza_paragraphs"
 msgstr "Géza imádja az átalakuló, mozgó és összecsukható dolgokat. Mindig az új lehetőségek felkutatására törekszik."
+
+#META VALUES
+msgid "home_meta_title"
+msgstr "Home"
+
+msgid "home_meta_desc"
+msgstr "Home"
+
+msgid "home_meta_keywords"
+msgstr "Home"
+
+msgid "hireus_meta_title"
+msgstr "Hire us"
+
+msgid "hireus_meta_desc"
+msgstr "Hire us"
+
+msgid "hireus_meta_keywords"
+msgstr "Hire us"
+
+msgid "portfolio_meta_title"
+msgstr "Portfolio"
+
+msgid "portfolio_meta_desc"
+msgstr "Portfolio"
+
+msgid "portfolio_meta_keywords"
+msgstr "Portfolio"
+
+msgid "method_meta_title"
+msgstr "Method"
+
+msgid "method_meta_desc"
+msgstr "Method"
+
+msgid "method_meta_keywords"
+msgstr "Method"
+
+msgid "contact_meta_title"
+msgstr "Contact"
+
+msgid "contact_meta_desc"
+msgstr "Contact"
+
+msgid "contact_meta_keywords"
+msgstr "Contact"
