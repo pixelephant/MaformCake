@@ -102,7 +102,7 @@ msgid "Works"
 msgstr "Munkáink"
 
 msgid "Hire us"
-msgstr "Dolgozz velünk"
+msgstr "Kapcsolat"
 
 msgid "Our method"
 msgstr "Így dolgozunk"
@@ -200,7 +200,7 @@ msgstr "Küldés"
 
 #Home
 msgid "home_title_first_line"
-msgstr "ipari formatervezők &trade;"
+msgstr "ipari formatervezők"
 
 msgid "home_title_second_line"
 msgstr "vagyunk"

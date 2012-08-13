@@ -739,10 +739,10 @@ hgroup h2{
   background:#ccc;
   text-align: center;
   border-radius: 100px;
-  width:100px;
-  height:100px;
+  width:150px;
+  height:150px;
   display:inline-block;
-  line-height: 100px;
+  line-height: 150px;
   font-family: 'oscb';
   text-transform: uppercase;
   text-decoration: none;
