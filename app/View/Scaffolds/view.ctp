@@ -17,7 +17,7 @@
  */
 ?>
 <div class="<?php echo $pluralVar; ?> view">
-<h2><?php echo __d('cake', 'View %s', $singularHumanName); ?></h2>
+<h2><?php echo __d('cake', 'View %s', $singularHumanName); ?> - <?php echo CakeSession::read('Config.language'); ?></h2>
 	<dl>
 <?php
 $i = 0;

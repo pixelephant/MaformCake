@@ -20,7 +20,7 @@
 <?php $this->layout = 'default_old' ?>
 
 <div class="<?php echo $pluralVar; ?> index">
-<h2><?php echo $pluralHumanName; ?></h2>
+<h2><?php echo $pluralHumanName; ?> - <?php echo CakeSession::read('Config.language'); ?></h2>
 <table cellpadding="0" cellspacing="0">
 <tr>
 <?php foreach ($scaffoldFields as $_field): ?>
