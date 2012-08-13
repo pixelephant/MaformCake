@@ -5,8 +5,6 @@
 <?php $this->start('description'); ?><?php echo __('portfolio_meta_desc'); ?><?php $this->end(); ?>
 <?php $this->start('keywords'); ?><?php echo __('portfolio_meta_keywords'); ?><?php $this->end(); ?>
 
-<?php echo $lang; ?>
-<?php print_r($portfolio_items); ?>
 <hgroup>
   <h1><?php echo __('portfolio_title_first_line') ?></h1>
   <h2><?php echo __('portfolio_title_second_line') ?></h2>
@@ -17,9 +15,11 @@
 
     <div class="element">
       <a href="<?php echo $this->webroot; ?><?php echo $lang ?>/portfolio/<?php echo $item['Portfolio']['slug']; ?>">
-        <span class="badge">
-          <?php echo $this->Html->retinaImage('badge.png','img/','Award winning project'); ?>
-        </span>
+        <?php if($item['Portfolio']['badge'] == 1){ ?>
+          <span class="badge">
+            <?php echo $this->Html->retinaImage('badge.png','img/','Award winning project'); ?>
+          </span>
+        <?php } ?>
         <?php echo $this->Html->retinaImage($item['Portfolio']['list_image'],'img/portfolio/' . $item['Portfolio']['slug'] . '/',$item['Portfolio']['name']); ?>
         <div class="data">
           <h3><?php echo $item['Portfolio']['name']; ?></h3>
