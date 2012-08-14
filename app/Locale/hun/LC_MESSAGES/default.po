@@ -175,10 +175,10 @@ msgid "Who we are"
 msgstr "Kik vagyunk"
 
 msgid "hireus_title_first_line"
-msgstr "hire us"
+msgstr "kapcsolat"
 
 msgid "hireus_title_second_line"
-msgstr "let's create something cool together!"
+msgstr "dolgozzunk együtt!"
 
 msgid "offer"
 msgstr "árajánlat"
@@ -187,16 +187,19 @@ msgid "contact"
 msgstr "kapcsolat"
 
 msgid "form_name"
-msgstr "Ön neve / Cégnév"
+msgstr "Név / Cégnév"
 
 msgid "form_email"
-msgstr "Ön email címe"
+msgstr "Kapcsolattartó e-mail címe"
 
 msgid "form_budget"
 msgstr "Keret"
 
 msgid "form_description"
-msgstr "Leírás"
+msgstr "Munka leírás"
+
+msgid "form_message"
+msgstr "Üzenet"
 
 msgid "form_send"
 msgstr "Küldés"

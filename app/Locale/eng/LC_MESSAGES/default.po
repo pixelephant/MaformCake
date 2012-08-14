@@ -53,11 +53,11 @@ msgstr ""
 
 #: View/Scaffolds/index.ctp:73
 msgid "previous"
-msgstr "Előző"
+msgstr "Previous"
 
 #: View/Scaffolds/index.ctp:75
 msgid "next"
-msgstr "Következő"
+msgstr "Next"
 
 #: View/Scaffolds/index.ctp:82;89
 msgid "New %s"
@@ -197,6 +197,9 @@ msgstr "Budget"
 
 msgid "form_description"
 msgstr "Description of work"
+
+msgid "form_message"
+msgstr "Message"
 
 msgid "form_send"
 msgstr "Send"
