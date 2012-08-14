@@ -36,9 +36,13 @@ class AppController extends Controller {
 
 	 public function beforeFilter(){
 	 	
-	 	// if(isset($this->params->lang)){
-	 	// 	CakeSession::write('Config.language', $this->params->lang);
-	 	// 	Configure::write('Config.language', $this->params->lang);
-	 	// }
+		if(CakeSession::read('Config.language') == 'hu'){
+	 		CakeSession::write('Config.language', 'hun');
+	 	}
+
+	 	if(CakeSession::read('Config.language') == 'en'){
+	 		CakeSession::write('Config.language', 'eng');
+	 	}
+
 	 }
 }
