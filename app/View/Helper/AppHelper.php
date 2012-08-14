@@ -46,7 +46,7 @@ class AppHelper extends Helper {
 			return '<div class="img" data-picture data-alt="' . $alt . '">
 								<div data-src="'. $dir . $f .'-m.' . $e . '"></div>
 								<div data-src="' . $dir . $f . '-m@2x.' . $e . '" data-media="(min-device-pixel-ratio: 2.0)"></div>
-					      <div data-src="' . $dir . $f . '.' . $e . '" data-media="(min-width: 767px)></div>
+					      <div data-src="' . $dir . $f . '.' . $e . '" data-media="(min-width: 767px)"></div>
 					      <div data-src="' . $dir . $f . '@2x.' . $e . '" data-media="(min-width: 767px) and (min-device-pixel-ratio: 2.0)"></div>
 					      <noscript>
 					        <img src="' . $dir . $f . '-m.' . $e . '" alt="' . $alt . '">
