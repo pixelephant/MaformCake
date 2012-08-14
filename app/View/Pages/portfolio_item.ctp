@@ -6,7 +6,7 @@
   <h2><?php echo $portfolio['Portfolio']['description']; ?>
     <?php 
       if($portfolio['Portfolio']['client'] != ''){
-       <?php "<span>" . echo __('client') . "</span>: <span>" . $portfolio['Portfolio']['client'] . "</span>"; ?></span>
+       echo "<span>" . __('client') . "</span>: <span>" . $portfolio['Portfolio']['client'] . "</span>";
       }
     ?>
   </h2>
