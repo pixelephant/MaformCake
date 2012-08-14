@@ -6,9 +6,7 @@
   <h2><?php echo $portfolio['Portfolio']['description']; ?>
     <?php 
       if($portfolio['Portfolio']['client'] != ''){
-    ?>
-       <span><?php echo __('client') . ": " . $portfolio['Portfolio']['client']; ?></span>
-    <?php
+       <?php "<span>" . echo __('client') . "</span>: <span>" . $portfolio['Portfolio']['client'] . "</span>"; ?></span>
       }
     ?>
   </h2>
@@ -31,8 +29,6 @@
       <p><?php echo $text['PortfolioItemText']['paragraphs']; ?></p>
     </div>
     <?php endforeach; ?>
-
-
 
     <?php foreach($portfolio_images as $image): ?>
       <figure>
