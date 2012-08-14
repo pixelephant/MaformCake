@@ -32,7 +32,7 @@ App::uses('Helper', 'View');
  */
 class AppHelper extends Helper {
 
-	public function retinaImage($file, $dir='img/', $alt=''){
+	public function retinaImage($file, $dir='img/', $alt='', $mobile = false){
 
 		$f = explode(".",$file);
 
@@ -42,13 +42,28 @@ class AppHelper extends Helper {
 
 		$dir = $this->webroot . $dir;
 
-		return '<div data-picture data-alt="' . $alt . '">
-			      <div data-src="' . $dir . $f . '.' . $e . '"></div>
-			      <div data-src="' . $dir . $f . '@2x.' . $e . '" data-media="(min-device-pixel-ratio: 2.0)"></div>
-			      <noscript>
-			        <img src="' . $dir . $f . '.' . $e . '" alt="' . $alt . '">
-			      </noscript>
-			    </div>';
+		if($mobile){
+			return '<div class="img" data-picture data-alt="' . $alt . '">
+								<div data-src="'. $dir . $f .'-m.' . $e . '"></div>
+								<div data-src="' . $dir . $f . '-m@2x.' . $e . '" data-media="(min-device-pixel-ratio: 2.0)"></div>
+					      <div data-src="' . $dir . $f . '.' . $e . '" data-media="(min-width: 767px)></div>
+					      <div data-src="' . $dir . $f . '@2x.' . $e . '" data-media="(min-width: 767px) and (min-device-pixel-ratio: 2.0)"></div>
+					      <noscript>
+					        <img src="' . $dir . $f . '-m.' . $e . '" alt="' . $alt . '">
+					      </noscript>
+					    </div>';
+		}else{
+			return '<div data-picture data-alt="' . $alt . '">
+					      <div data-src="' . $dir . $f . '.' . $e . '"></div>
+					      <div data-src="' . $dir . $f . '@2x.' . $e . '" data-media="(min-device-pixel-ratio: 2.0)"></div>
+					      <noscript>
+					        <img src="' . $dir . $f . '.' . $e . '" alt="' . $alt . '">
+					      </noscript>
+					    </div>';
+		}
 	}
+
+
+
 
 }

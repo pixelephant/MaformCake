@@ -21,7 +21,7 @@
 </p>
 
 <section id="project">
-  <?php echo $this->Html->retinaImage($portfolio['Portfolio']['large_image'],'img/portfolio/' . $portfolio['Portfolio']['slug'] . '/','Award winning project'); ?>
+  <?php echo $this->Html->retinaImage($portfolio['Portfolio']['large_image'],'img/portfolio/' . $portfolio['Portfolio']['slug'] . '/','Award winning project', true); ?>
   
     <?php foreach($portfolio_texts as $text): ?>
     <div class="text">
@@ -34,7 +34,7 @@
 
     <?php foreach($portfolio_images as $image): ?>
       <figure>
-        <?php echo $this->Html->retinaImage($image['PortfolioItemImage']['image_file'],'img/portfolio/' . $portfolio['Portfolio']['slug'] . '/',$portfolio['Portfolio']['name']); ?>
+        <?php echo $this->Html->retinaImage($image['PortfolioItemImage']['image_file'],'img/portfolio/' . $portfolio['Portfolio']['slug'] . '/',$portfolio['Portfolio']['name'], true); ?>
         <p><?php echo $image['PortfolioItemImage']['paragraphs']; ?></p>
       </figure>
     <?php endforeach; ?>
