@@ -3,7 +3,13 @@
 
 <hgroup>
   <h1><?php echo $portfolio['Portfolio']['name']; ?></h1>
-  <h2><?php echo $portfolio['Portfolio']['description']; ?> <?php echo __('client') . ": " . $portfolio['Portfolio']['client']; ?></h2>
+  <h2><?php echo $portfolio['Portfolio']['description']; ?>
+    <?php 
+      if($portfolio['Portfolio']['client'] != ''){
+        echo __('client') . ": " . $portfolio['Portfolio']['client'];
+      }
+    ?>
+  </h2>
 </hgroup>
 <p id="portfolio-nav">
   <a class="prev" href="<?php echo $this->webroot; ?><?php echo ($lang == 'en' ? 'en/' : ''); ?>/portfolio/<?php echo $prev_item[0]['portfolios']['slug']; ?>"> <span aria-hidden="true">&laquo;</span> <?php echo __('previous'); ?></a>
