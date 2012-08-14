@@ -14,7 +14,7 @@ class Portfolio extends AppModel {
 
     public $actsAs = array(
         'Translate' => array(
-            'description', 'data'
+            'description', 'data', 'client'
         )
     );
 
@@ -50,6 +50,7 @@ class Portfolio extends AppModel {
             
             $this->query("INSERT INTO portfolio_translations (locale, model, foreign_key, field, content) VALUES ('" . $lang . "', 'Portfolio', " . $id . ", 'data', '');");
             $this->query("INSERT INTO portfolio_translations (locale, model, foreign_key, field, content) VALUES ('" . $lang . "', 'Portfolio', " . $id . ", 'description', '');");
+            $this->query("INSERT INTO portfolio_translations (locale, model, foreign_key, field, content) VALUES ('" . $lang . "', 'Portfolio', " . $id . ", 'client', '');");
         }
         return true;
     }
