@@ -32,7 +32,7 @@
 
     <?php foreach($portfolio_images as $image): ?>
       <figure>
-        <?php echo $this->Html->retinaImage($image['PortfolioItemImage']['image_file'],'img/portfolio/' . $portfolio['Portfolio']['slug'] . '/',$portfolio['PortfolioItemImage']['title'], true); ?>
+        <?php echo $this->Html->retinaImage($image['PortfolioItemImage']['image_file'],'img/portfolio/' . $portfolio['Portfolio']['slug'] . '/',$image['PortfolioItemImage']['title'], true); ?>
         <p><?php echo $image['PortfolioItemImage']['paragraphs']; ?></p>
       </figure>
     <?php endforeach; ?>
