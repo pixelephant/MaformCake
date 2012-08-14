@@ -116,6 +116,9 @@ msgstr "Munkák"
 msgid "portfolio_title_second_line"
 msgstr "amikre büszkék vagyunk"
 
+msgid "client"
+msgstr "Ügyfél"
+
 #Method
 #Title
 msgid "method_title_first_line"

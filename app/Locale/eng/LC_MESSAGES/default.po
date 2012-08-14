@@ -116,6 +116,9 @@ msgstr "Works"
 msgid "portfolio_title_second_line"
 msgstr "we are proud of"
 
+msgid "client"
+msgstr "Client"
+
 #Method
 #Title
 msgid "method_title_first_line"
