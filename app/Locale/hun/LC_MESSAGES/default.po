@@ -120,7 +120,7 @@ msgid "portfolio_title_second_line"
 msgstr "amikre büszkék vagyunk"
 
 msgid "client"
-msgstr "Ügyfél"
+msgstr "Megbízó"
 
 #Method
 #Title
