@@ -100,15 +100,27 @@ $(window).load(function(){
 /*! A fix for the iOS orientationchange zoom bug. Script by @scottjehl, rebound by @wilto.MIT / GPLv2 License.*/(function(a){function m(){d.setAttribute("content",g),h=!0}function n(){d.setAttribute("content",f),h=!1}function o(b){l=b.accelerationIncludingGravity,i=Math.abs(l.x),j=Math.abs(l.y),k=Math.abs(l.z),(!a.orientation||a.orientation===180)&&(i>7||(k>6&&j<8||k<8&&j>6)&&i>5)?h&&n():h||m()}var b=navigator.userAgent;if(!(/iPhone|iPad|iPod/.test(navigator.platform)&&/OS [1-5]_[0-9_]* like Mac OS X/i.test(b)&&b.indexOf("AppleWebKit")>-1))return;var c=a.document;if(!c.querySelector)return;var d=c.querySelector("meta[name=viewport]"),e=d&&d.getAttribute("content"),f=e+",maximum-scale=1",g=e+",maximum-scale=10",h=!0,i,j,k,l;if(!d)return;a.addEventListener("orientationchange",m,!1),a.addEventListener("devicemotion",o,!1)})(this); 
 $(document).ready(function(){
 
+	var lang = $("body").data("locale");
+
 	$("#form .clearfix a").click(function(){
 		$(this).addClass("active").siblings().removeClass("active");
 		if($(this).data("type") === "contact"){
 			$("#budget-field").fadeOut();
-			$("#description-label").html("Message");
+			if(lang == "en"){
+				$("#description-label").html("Message");
+			}
+			else{
+				$("#description-label").html("Üzenet");	
+			}
 		}
 		else{
 			$("#budget-field").fadeIn();
-			$("#description-label").html("Description of the work");	
+			if(lang == "en"){
+				$("#description-label").html("Description of the work");
+			}
+			else{
+				$("#description-label").html("Munka leírása");	
+			}
 		}
 		return false;
 	})
