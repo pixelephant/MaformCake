@@ -81,19 +81,19 @@ msgstr "Kapcsolat"
 #Footer
 
 msgid "facebook"
-msgstr "Like us on Facebook"
+msgstr "Kövess minket Facrbookon"
 
 msgid "behance"
-msgstr "Check us out on Behance"
+msgstr "Nézd meg a Behance profilunkat"
 
 msgid "tumblr"
-msgstr "Read from us on Tumblr"
+msgstr "Olvass minket Tumbleren"
 
 msgid "vimeo"
-msgstr "Watch us on Vimeo"
+msgstr "Nézz minket Vimeón"
 
 msgid "contact_email"
-msgstr "Contact us at %s or at %s"
+msgstr "Írj nekünk az %s címen, vagy hívj a %s telefonszámon"
 
 msgid "About"
 msgstr "Rólunk"
