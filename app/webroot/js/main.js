@@ -144,7 +144,7 @@ $(document).ready(function(){
 		return false;
 	});
 
-	var topos = $("hgroup").eq(0).offset().top + 100;
+	var topos = $("hgroup").eq(0).offset().top + 200;
 
 	  $(window).scroll(function (event) {
 	    var y = $(window).scrollTop();
