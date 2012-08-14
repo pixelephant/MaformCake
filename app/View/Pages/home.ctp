@@ -12,7 +12,7 @@
       <ul class="slides">        
         <li>
           <div class="img" data-picture data-alt="">
-            <div data-src="<?php echo $this->webroot; ?>img/slider/slider-01.jpg"></div>
+            <div data-src="<?php echo $this->webroot; ?>img/slider/slider-01-m.jpg"></div>
             <div data-src="<?php echo $this->webroot; ?>img/slider/slider-01-m@2x.jpg" data-media="(min-device-pixel-ratio: 2.0)"></div>
             <div data-src="<?php echo $this->webroot; ?>img/slider/slider-01.jpg" data-media="(min-width: 767px)"></div>
             <div data-src="<?php echo $this->webroot; ?>img/slider/slider-01@2x.jpg" data-media="(min-width: 767px) and (min-device-pixel-ratio: 2.0)"></div>
@@ -23,7 +23,7 @@
         </li>
         <li>
           <div class="img" data-picture data-alt="">
-            <div data-src="<?php echo $this->webroot; ?>img/slider/slider-02.jpg"></div>
+            <div data-src="<?php echo $this->webroot; ?>img/slider/slider-02-m.jpg"></div>
             <div data-src="<?php echo $this->webroot; ?>img/slider/slider-02-m@2x.jpg" data-media="(min-device-pixel-ratio: 2.0)"></div>
             <div data-src="<?php echo $this->webroot; ?>img/slider/slider-02.jpg" data-media="(min-width: 767px)"></div>
             <div data-src="<?php echo $this->webroot; ?>img/slider/slider-02@2x.jpg" data-media="(min-width: 767px) and (min-device-pixel-ratio: 2.0)"></div>
@@ -34,7 +34,7 @@
         </li>
         <li>
           <div class="img" data-picture data-alt="">
-            <div data-src="<?php echo $this->webroot; ?>img/slider/slider-03.jpg"></div>
+            <div data-src="<?php echo $this->webroot; ?>img/slider/slider-03-m.jpg"></div>
             <div data-src="<?php echo $this->webroot; ?>img/slider/slider-03-m@2x.jpg" data-media="(min-device-pixel-ratio: 2.0)"></div>
             <div data-src="<?php echo $this->webroot; ?>img/slider/slider-03.jpg" data-media="(min-width: 767px)"></div>
             <div data-src="<?php echo $this->webroot; ?>img/slider/slider-03@2x.jpg" data-media="(min-width: 767px) and (min-device-pixel-ratio: 2.0)"></div>
