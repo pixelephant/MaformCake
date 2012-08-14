@@ -81,7 +81,7 @@ msgstr "Kapcsolat"
 #Footer
 
 msgid "facebook"
-msgstr "Kövess minket Facrbookon"
+msgstr "Kövess minket Facebookon"
 
 msgid "behance"
 msgstr "Nézd meg a Behance profilunkat"
@@ -93,7 +93,10 @@ msgid "vimeo"
 msgstr "Nézz minket Vimeón"
 
 msgid "contact_email"
-msgstr "Írj nekünk az %s címen, vagy hívj a %s telefonszámon"
+msgstr "Írj nekünk az %s címre, vagy hívj a %s-os számon"
+
+msgid "pix"
+msgstr "Weboldalkészítés: "
 
 msgid "About"
 msgstr "Rólunk"

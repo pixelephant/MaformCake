@@ -119,8 +119,8 @@
       </li>
     </ul>
     <p id="copy">
-      Webdesign by <a href="http://www.pixelephant.hu">Pixelephant Media</a>
-      <span>&copy; 2012 - Maform</span>
+      <?php echo __('pix'); ?> <a href="http://www.pixelephant.hu">Pixelephant Media</a>
+      <span>&copy; <?php echo date("Y"); ?> - Maform</span>
     </p>
   </footer>
 

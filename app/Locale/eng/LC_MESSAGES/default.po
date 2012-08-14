@@ -95,6 +95,9 @@ msgstr "Watch us on Vimeo"
 msgid "contact_email"
 msgstr "Contact us at %s or at %s"
 
+msgid "pix"
+msgstr "Webdesign by "
+
 msgid "Hire us"
 msgstr "Hire us"
 
@@ -206,7 +209,7 @@ msgstr "Send"
 
 #Home
 msgid "home_title_first_line"
-msgstr "Industrial designers &trade;"
+msgstr "Industrial designers"
 
 msgid "home_title_second_line"
 msgstr "We are"
