@@ -850,7 +850,7 @@ hgroup h2{
   text-align: center;
 }
 
-#data b{
+#data strong{
   font-family: 'osb';
   font-size: 1.2em;
 }
