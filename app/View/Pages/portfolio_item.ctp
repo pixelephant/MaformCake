@@ -12,7 +12,7 @@
   </h2>
 </hgroup>
 <p id="portfolio-nav">
-  <a class="prev" href="<?php echo $this->webroot; ?><?php echo ($lang == 'en' ? 'en/' : ''); ?>/portfolio/<?php echo $prev_item[0]['portfolios']['slug']; ?>"> <span aria-hidden="true">&laquo;</span> <?php echo __('previous'); ?></a>
+  <a class="prev" href="<?php echo $this->webroot; ?><?php echo ($lang == 'en' ? 'en/' : ''); ?>portfolio/<?php echo $prev_item[0]['portfolios']['slug']; ?>"> <span aria-hidden="true">&laquo;</span> <?php echo __('previous'); ?></a>
   <a href="#" class="all"><?php echo $portfolio['Portfolio']['name']; ?></a>
   <a class="next" href="<?php echo $this->webroot; ?><?php echo ($lang == 'en' ? 'en/' : ''); ?>portfolio/<?php echo $next_item[0]['portfolios']['slug']; ?>"><?php echo __('next'); ?> <span aria-hidden="true">&raquo;</span></a>
 </p>
