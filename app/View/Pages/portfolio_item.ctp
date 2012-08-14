@@ -1,6 +1,10 @@
 <?php $this->layout = 'maform'; ?>
 <?php $lang = CakeSession::read('Config.language'); ?>
 
+<?php $this->start('title'); ?><?php echo $portfolio['Portfolio']['name']; ?> formatervezés<?php $this->end(); ?>
+<?php $this->start('description'); ?><?php echo $portfolio['Portfolio']['description']; ?><?php $this->end(); ?>
+<?php $this->start('keywords'); ?><?php $this->end(); ?>
+
 <hgroup>
   <h1><?php echo $portfolio['Portfolio']['name']; ?></h1>
   <h2><?php echo $portfolio['Portfolio']['description']; ?>
