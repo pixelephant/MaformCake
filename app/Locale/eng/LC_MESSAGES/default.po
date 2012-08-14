@@ -228,46 +228,37 @@ msgstr "Géza loves transformable, moving or collapsible objects. He is always t
 
 #META VALUES
 msgid "home_meta_title"
-msgstr "Home"
+msgstr "Industrial design"
 
 msgid "home_meta_desc"
-msgstr "Home"
+msgstr "Maform is a young and lively industrial design studio, known for integrating engineering and artistic skills in remarkable designs. Our main areas of expertise is product design, furniture design and transportation design."
 
 msgid "home_meta_keywords"
-msgstr "Home"
+msgstr "Industrial design, maform, product design, furniture design, transportation design"
 
 msgid "hireus_meta_title"
-msgstr "Hire us"
+msgstr "Get in touch and get involved with great thoughts and neat design."
 
 msgid "hireus_meta_desc"
-msgstr "Hire us"
+msgstr "We can help you with solving design problems, and achieving your goals with high quality designs from ideas to realization."
 
 msgid "hireus_meta_keywords"
 msgstr "Hire us"
 
 msgid "portfolio_meta_title"
-msgstr "Portfolio"
+msgstr "Products, furniture designs and our industrial design portfolio"
 
 msgid "portfolio_meta_desc"
-msgstr "Portfolio"
+msgstr "Our concepts and realized projects in the fields of product design, furniture design, transportation design and other fields of industrial design."
 
 msgid "portfolio_meta_keywords"
 msgstr "Portfolio"
 
 msgid "method_meta_title"
-msgstr "Method"
+msgstr "Our design method"
 
 msgid "method_meta_desc"
-msgstr "Method"
+msgstr "We have a way of approaching design problems. This way, we save time and energy for our clients and we can guarantee high quality work in the fields of product design, furniture design and transportation design."
 
 msgid "method_meta_keywords"
 msgstr "Method"
-
-msgid "contact_meta_title"
-msgstr "Contact"
-
-msgid "contact_meta_desc"
-msgstr "Contact"
-
-msgid "contact_meta_keywords"
-msgstr "Contact"

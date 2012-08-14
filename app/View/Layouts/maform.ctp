@@ -37,7 +37,7 @@
   <!-- Use the .htaccess and remove these lines to avoid edge case issues.
        More info: h5bp.com/i/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title><?php echo $this->fetch('title'); ?></title>
+  <title><?php echo $this->fetch('title'); ?> - Maform</title>
   <?php echo $this->Html->meta('description', $this->fetch('description')); ?>
   <?php echo $this->Html->meta('keywords', $this->fetch('keywords')); ?>
   <meta name="apple-mobile-web-app-capable" content="yes" />  

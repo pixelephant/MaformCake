@@ -228,46 +228,37 @@ msgstr "Géza imádja az átalakuló, mozgó és összecsukható dolgokat. Mindi
 
 #META VALUES
 msgid "home_meta_title"
-msgstr "Home"
+msgstr "Formatervezés és bútortervezés"
 
 msgid "home_meta_desc"
-msgstr "Home"
+msgstr "A Maform egy fiatal és lendületes formatervező stúdió, védjegye a műszaki és a művészeti értékek összehangolt kialakítása. Főbb tevékenységi területeink a termék formatervezés, a bútortervezés és a járműtervezés."
 
 msgid "home_meta_keywords"
 msgstr "Home"
 
 msgid "hireus_meta_title"
-msgstr "Hire us"
+msgstr "Vedd fel velünk a kapcsolatot és ismerd meg a formatervezés világát!"
 
 msgid "hireus_meta_desc"
-msgstr "Hire us"
+msgstr "Segítünk megismerni és elérhetővé tenni azokat a lehetőségeket, amiket egy formatervezett termék jelenthet számodra, vagy céged számára."
 
 msgid "hireus_meta_keywords"
 msgstr "Hire us"
 
 msgid "portfolio_meta_title"
-msgstr "Portfolio"
+msgstr "Formatervezési munkáink a terméktervezés, a bútortervezés és a járműtervezés területén"
 
 msgid "portfolio_meta_desc"
-msgstr "Portfolio"
+msgstr "Terveink és megvalósult munkáink a járműtervezés, a bútortervezés és a formatervezés területén."
 
 msgid "portfolio_meta_keywords"
 msgstr "Portfolio"
 
 msgid "method_meta_title"
-msgstr "Method"
+msgstr "Formatervezési módszertanunk"
 
 msgid "method_meta_desc"
-msgstr "Method"
+msgstr "Módszeresen közelítjük meg a tervezési problémákat, így időt és energiát tudunk megtakarítani ügyfeleinknek és biztosítani tudjuk az állandóan magas minőséget. Módszerünk átfogó és adaptív, így rugalmasan alkalmazható a bútortervezés, a járműtervezés és egyéb formatervezési feladatok kapcsán."
 
 msgid "method_meta_keywords"
 msgstr "Method"
-
-msgid "contact_meta_title"
-msgstr "Contact"
-
-msgid "contact_meta_desc"
-msgstr "Contact"
-
-msgid "contact_meta_keywords"
-msgstr "Contact"
