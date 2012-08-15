@@ -16,11 +16,11 @@ msgstr ""
 
 #: View/Errors/error400.ctp:21
 #: View/Errors/error500.ctp:21
-msgid "Error"
+msgid "Probléma"
 msgstr ""
 
 #: View/Errors/error400.ctp:23
-msgid "The requested address %s was not found on this server."
+msgid "A kért cím (%s) nem található."
 msgstr ""
 
 #: View/Errors/error500.ctp:22
@@ -262,3 +262,6 @@ msgstr "Módszeresen közelítjük meg a tervezési problémákat, így időt é
 
 msgid "method_meta_keywords"
 msgstr "Method"
+
+msgid "page_not_found"
+msgstr "Ilyen oldalunk sajnos nincsen!"

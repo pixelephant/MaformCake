@@ -47,16 +47,16 @@
 
 	/* Nyelvek */
 
-	Router::connect('/:lang', array('controller' => 'pages', 'action' => 'display', 'home'), array('persist' => array('lang')));
+	Router::connect('/:lang', array('controller' => 'pages', 'action' => 'display', 'home'), array('lang' => 'en'));
 
-	Router::connect('/:lang/portfolio', array('controller' => 'pages', 'action' => 'display', 'portfolio'));
+	Router::connect('/:lang/portfolio', array('controller' => 'pages', 'action' => 'display', 'portfolio'), array('lang' => 'en'));
 
-	Router::connect('/:lang/portfolio/*', array('controller' => 'pages', 'action' => 'portfolio_item'));
+	Router::connect('/:lang/portfolio/*', array('controller' => 'pages', 'action' => 'portfolio_item'), array('lang' => 'en'));
 
-	Router::connect('/:lang/method', array('controller' => 'pages', 'action' => 'display', 'method'));
-	Router::connect('/:lang/hireus', array('controller' => 'pages', 'action' => 'display', 'hireus'));
+	Router::connect('/:lang/method', array('controller' => 'pages', 'action' => 'display', 'method'), array('lang' => 'en'));
+	Router::connect('/:lang/hireus', array('controller' => 'pages', 'action' => 'display', 'hireus'), array('lang' => 'en'));
 
-
+	Router::connect('/*', array('controller' => 'error', 'action' => 'notfound'));
 
 /**
  * Load all plugin routes.  See the CakePlugin documentation on 

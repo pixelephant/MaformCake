@@ -262,3 +262,6 @@ msgstr "We have a way of approaching design problems. This way, we save time and
 
 msgid "method_meta_keywords"
 msgstr "Method"
+
+msgid "page_not_found"
+msgstr "Page not found!"

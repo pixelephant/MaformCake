@@ -20,6 +20,11 @@
 			$path = func_get_args();
 
 			$portfolio = $this->Portfolio->findBySlug($path[0]);
+
+			if(!$portfolio){
+				throw new NotFoundException(__('page_not_found'));
+			}
+
 			$portfolio_texts = $this->PortfolioItemText->findAllByPortfolioId($portfolio['Portfolio']['id']);
 			$portfolio_images = $this->PortfolioItemImage->findAllByPortfolioId($portfolio['Portfolio']['id']);
 			
