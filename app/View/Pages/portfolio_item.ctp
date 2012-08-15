@@ -48,3 +48,9 @@
     <?php endforeach; ?>
 
 </section>
+
+<div id="cta" class="clearfix">
+  <a href="<?php echo $this->webroot; ?><?php echo ($lang == 'en' ? 'en/' : '') ?>"><?php echo __('About'); ?></a>
+  <a class="most" href="<?php echo $this->webroot; ?><?php echo ($lang == 'en' ? 'en/' : '') ?>hireus"><b><?php echo __('Hire us'); ?></b></a>
+  <a href="<?php echo $this->webroot; ?><?php echo ($lang == 'en' ? 'en/' : '') ?>method"><?php echo __('Our method'); ?></a>
+</div>
