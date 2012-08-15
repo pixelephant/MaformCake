@@ -6,7 +6,7 @@
 			$email = new CakeEmail();
 			$email->config('smtp');
 			$email->from(array('weboldal@maform.hu' => 'Maform Weboldal'))
-    	->to('0antalbalazs0@gmail.com')
+    	->to('info@maform.hu')
     	->subject('Üzenet a honlapról')
     	->emailFormat('both')
     	->template('default');

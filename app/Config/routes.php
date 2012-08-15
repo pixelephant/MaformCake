@@ -56,7 +56,7 @@
 	Router::connect('/:lang/method', array('controller' => 'pages', 'action' => 'display', 'method'), array('lang' => 'en'));
 	Router::connect('/:lang/hireus', array('controller' => 'pages', 'action' => 'display', 'hireus'), array('lang' => 'en'));
 
-	Router::connect('/*', array('controller' => 'error', 'action' => 'notfound'));
+	// Router::connect('/*', array('controller' => 'error', 'action' => 'notfound'));
 
 /**
  * Load all plugin routes.  See the CakePlugin documentation on 
