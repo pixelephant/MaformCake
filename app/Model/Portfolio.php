@@ -1,6 +1,8 @@
 <?php
 class Portfolio extends AppModel {
 
+    public $order = "Portfolio.position ASC";
+
 	public $hasMany = array(
 		'PortfolioItemText' => array(
         'className'  => 'PortfolioItemText',
