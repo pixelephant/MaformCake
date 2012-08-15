@@ -131,7 +131,7 @@ $(document).ready(function(){
 			thxmsg = "Thanks."
 		}
 		var t = $("#offer-form").find("input[type='submit']").val();
-		$("#offer-form").find("input[type='submit']").val(t+"...");
+		$("#offer-form").find("input[type='submit']").val(t+" ...");
 		$.ajax({
 		  type: 'POST',
 		  url: "/email",
@@ -143,7 +143,7 @@ $(document).ready(function(){
 			dataType: "json",
 		  success: function(resp){
 		  	if(resp.status == 'true'){
-		  		$("#offer-form").find("input[type='submit']").css("background","green").attr("readonly","readonly").addClass("disabled").val("✓"+thxmsg);
+		  		$("#offer-form").find("input[type='submit']").css("background","green").attr("readonly","readonly").addClass("disabled").val("✓ "+thxmsg);
 		  	}
 		}});
 		return false;
