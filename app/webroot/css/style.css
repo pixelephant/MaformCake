@@ -1040,8 +1040,8 @@ hgroup h2{
 }
 
 footer{
-  width:90%;
-  padding: 100px 5% 0 5%;
+  width:100%;
+  padding: 100px 0 0 0;
   background:#000;
   overflow: hidden;
 }
@@ -1067,8 +1067,8 @@ footer p span{
 
 footer ul{
   overflow: hidden;
-  width: 100%;
-  padding: 0;
+  width: 90%;
+  padding: 0 5%;
 }
 
 footer li{
