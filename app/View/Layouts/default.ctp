@@ -39,7 +39,8 @@ $cakeDescription = __d('cake_dev', 'Maform: the rapid development framework');
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, "/admin/portfolios"); ?></h1>
+			<!-- <h1><?php echo $this->Html->link($cakeDescription, "/admin/portfolios"); ?></h1> -->
+			<h1 class="logout"><?php echo $this->Html->link('Logout', "/users/logout"); ?></h1>
 		</div>
 		<div id="content">
 
