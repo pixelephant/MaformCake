@@ -971,6 +971,7 @@ hgroup h2{
   position: absolute;
   top:3%;
   right: 1%;
+  max-width: 20%;
 }
 
 #portfolio .element p,#portfolio .element h3{
