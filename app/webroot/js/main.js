@@ -137,7 +137,7 @@ $(document).ready(function(){
 		  url: "/email",
 			data: {name : $("#offer-name").val(),
 						email : $("#offer-email").val(),
-						budget : $("#offer-budget").val(),
+						budget : $("#offer-budget").is(":visible") ? $("#offer-budget").val() : "-",
 						description : $("#offer-description").val()
 						},
 			dataType: "json",
