@@ -126,6 +126,12 @@ $(document).ready(function(){
 	})
 
 	$("#offer-form").submit(function(){
+		var thxmsg = "Köszönjük."
+		if(lang == "en"){
+			thxmsg = "Thanks."
+		}
+		var t = $("#offer-form").find("input[type='submit']").val();
+		$("#offer-form").find("input[type='submit']").val(t+"...");
 		$.ajax({
 		  type: 'POST',
 		  url: "/email",
@@ -136,9 +142,8 @@ $(document).ready(function(){
 						},
 			dataType: "json",
 		  success: function(resp){
-		  	console.log(resp.status);
 		  	if(resp.status == 'true'){
-		  		$("#offer-form").find("input[type='submit']").css("background","green").attr("readonly","readonly").addClass("disabled").val("✓ Köszönjük.");
+		  		$("#offer-form").find("input[type='submit']").css("background","green").attr("readonly","readonly").addClass("disabled").val("✓"+thxmsg);
 		  	}
 		}});
 		return false;
