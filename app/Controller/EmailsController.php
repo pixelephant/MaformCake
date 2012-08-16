@@ -4,7 +4,7 @@
 
 		public function send() {
 			$email = new CakeEmail();
-			$email->config('smtp');
+			$email->config('default');
 			$email->from(array('weboldal@maform.hu' => 'Maform Weboldal'))
     	->to('info@maform.hu')
     	->subject('Üzenet a honlapról')
