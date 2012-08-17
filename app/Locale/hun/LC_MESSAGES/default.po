@@ -84,7 +84,7 @@ msgid "facebook"
 msgstr "Kövess minket Facebookon"
 
 msgid "behance"
-msgstr "Nézd meg a Behance profilunkat"
+msgstr "Figyeld a Behance profilunkat"
 
 msgid "tumblr"
 msgstr "Olvass minket Tumbleren"
@@ -142,7 +142,7 @@ msgid "research_title"
 msgstr "Kutatás"
 
 msgid "research_text"
-msgstr "Megfigyeljük, meghatározzuk, leírjuk, elemezzük és rendszerezzük a a feladathoz kapcsolódó problémákat, a környezeti tényezőket és a befoglaló rendszereket."
+msgstr "Megfigyeljük, meghatározzuk, leírjuk, elemezzük és rendszerezzük a feladathoz kapcsolódó problémákat, a környezeti tényezőket és a befoglaló rendszereket."
 
 #: Design
 msgid "design_title"
