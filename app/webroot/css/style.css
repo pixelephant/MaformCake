@@ -1122,9 +1122,9 @@ footer a,#portfolio-nav a{
 /* Landscape phones and down */
   @media (max-width: 480px) {
     .most b{
-      width:5em;
-      height:5em;
-      line-height: 5em;
+      width:86px;
+      height:86px;
+      line-height: 86px;
 
     }
     footer p{
