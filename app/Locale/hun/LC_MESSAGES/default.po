@@ -84,7 +84,7 @@ msgid "facebook"
 msgstr "Kövess minket Facebookon"
 
 msgid "behance"
-msgstr "Figyeld a Behance profilunkat"
+msgstr "Figyeld Behance profilunkat"
 
 msgid "tumblr"
 msgstr "Olvass minket Tumbleren"

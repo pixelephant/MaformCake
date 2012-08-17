@@ -1130,10 +1130,12 @@ footer a,#portfolio-nav a{
     footer p{
       line-height: 2;
     }
+    footer p{
+      line-height: 2;
+    }
     footer li{
       padding: 5% 0.5%;
     }
-
    #form .clearfix a{
       width:105px;
       height:105px;
@@ -1156,6 +1158,10 @@ footer a,#portfolio-nav a{
     }
   }
  
+
+ @media (max-width: 700px){
+  
+ }
 
 
   /*KB tablet*/
